@@ -35,10 +35,10 @@ with open (csvpath) as csvfile:
 #print total votes
 print(
     "",
-    "Election Results",
-    "-------------------------",
-    "Total Votes:", total_votes,
-    "-------------------------",
+    "Election Results\n",
+    "-------------------------\n", 
+    "Total Votes:",total_votes, "\n",
+    "-------------------------\n",
 )
 #calculate and print each candidate with percentage and number of votes to them
 for candidate in poll:
