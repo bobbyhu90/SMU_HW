@@ -1,74 +1,65 @@
+#imports libaries
+import os
 import csv
-import statistics as st
+
+#create variable needed
+total_votes = int(0)
+poll = {}
+csvpath = os.path.join ("Resources", "election_data.csv")
 
 
-# Requirements
-# Your task is to create a Python script that analyzes the records to calculate each of the following:
-# The total number of months included in the dataset
-
-# The net total amount of "Profit/Losses" over the entire period
-# Calculate the changes in "Profit/Losses" over the entire period, then find the average of those changes
-# The greatest increase in profits (date and amount) over the entire period
-# The greatest decrease in losses (date and amount) over the entire period
-
-
-total_month = 0 
-month_of_change = []
-net_change_list = []
-greatest_increase = ["", 0]
-greatest_decrease = ["", 999999999999]
-total_net = 0
-
-file_path = "./Resources/budget_data.csv"
-
-with open(file_path) as csvfile:
+with open (csvpath) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
     csv_header = next(csvreader)
-
-    first_row = next(csvreader)
-    total_month = total_month + 1
-    total_net = total_net + int(first_row[1])
-    previous_net = int(first_row[1])
-
-    print(f"CSV Header: {csv_header}")
-
     for row in csvreader:
-
-        # The total number of months included in the dataset       
-        
-         total_month = total_month + 1
-
-
-        # # The net total amount of "Profit/Losses" over the entire period
-
-         total_net = total_net + int(first_row[1])
-         net_change = int(row[1]) - previous_net
-         previous_net = int(row[1])
-         net_change_list = net_change_list + [net_change]
-         month_of_change = month_of_change + [row[0]]
-
-# The greatest increase in profits (date and amount) over the entire period
-
-         if net_change > greatest_increase[1]:
-             greatest_increase[0] = row[0]
-             greatest_increase[1] = net_change
+        #calculate total votes
+        total_votes += 1
+        #add data to poll dictionary, each candidate gets a count of votes to them
+        if row[2] in poll.keys():
+            poll[row[2]] = poll[row[2]] + 1
+        else:
+            poll[row[2]] = 1
 
 
-# The greatest decrease in losses (date and amount) over the entire period
+#Election Results
+ # -------------------------
+ # Total Votes: 3521001
+ # -------------------------
+ # Khan: 63.000% (2218231)
+ #Correy: 20.000% (704200)
+ #Li: 14.000% (492940)
+ #O'Tooley: 3.000% (105630)
+  #-------------------------
+  #Winner: Khan
+  #-------------------------
+#print total votes
+print(
+    "",
+    "Election Results",
+    "-------------------------",
+    "Total Votes:", total_votes,
+    "-------------------------",
+)
+#calculate and print each candidate with percentage and number of votes to them
+for candidate in poll:
+    print(candidate, ":", round(poll[candidate]/total_votes*100, 1), "% (", poll[candidate], ")")
+print("-------------------------")
+#calculate and print winner of the election
+for candidate in poll:
+    if poll[candidate] >= total_votes/2:
+        print("Winner:", candidate)
 
 
-         if net_change < greatest_decrease[1]:
-             greatest_decrease[0] = row[0]
-             greatest_decrease[1] = net_change
-
-net_monthly_average = sum(net_change_list)/len(net_change_list)
-
-# print results
-print("Financial Analysis")
-print("------------------------------------------------------------------------------------------")
-print(f"Total Months: {total_month}")
-print(f"Total Profits: ${total_net}")
-print(f"Average Change: ${net_monthly_average }")
-print(f"Greatest Increase in Profits:" + str(greatest_increase[0]) + " ($" + str(greatest_increase[1]) + ")")
-print(f"Greatest Decrease in Profits:" + str(greatest_decrease[0]) + " ($" + str(greatest_decrease[1]) + ")")
-print("------------------------------------------------------------------------------------------") 
+#write data in a seperate text file
+with open('election_results.txt', "w") as text:
+    text.write("\n")
+    text.write("Election Results\n")
+    text.write("-------------------------\n")
+    text.write("Total Values:" + str(total_votes) + "\n")
+    text.write("-------------------------\n")
+    for candidate in poll:
+        text.write(str(candidate) + ":" + str(round(poll[candidate]/total_votes*100 + 1)) + "% (" + str(poll[candidate]) + ")\n")
+    text.write("-------------------------\n")
+    for candidate in poll:
+        if poll[candidate] >= total_votes/2:
+           text.write("Winner:" + str(candidate))
