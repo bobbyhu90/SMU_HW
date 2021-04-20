@@ -1,4 +1,4 @@
-took out the api keys file, to wokr it with code, need to recreate the file and add
+took out the api keys file, to work it with code, need to recreate the file and add
 
 # OpenWeatherMap API Key
 weather_api_key = "YOUR KEY HERE!"
