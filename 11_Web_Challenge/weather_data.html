@@ -1,0 +1,6826 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Web Design Challenge - Home</title>
+        <!-- Styling for nav bar-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+  <title>Weathers</title>
+    </head>
+    <body style="background-color:rgb(39, 204, 204)">
+        <nav class="navbar navbar-dark" style="background-color: #000000;padding-right: 25px;padding-left: 25px;">
+            <div class="row .col-md-1">
+                <a class="navbar-brand" href="index.html">Bobby's Weather Report</a>
+            </div>
+            <div class="row .col-md-3 .col-md-offset-2">
+                <a class="navbar-brand" href="comparison.html">Comparisons</a>
+                <a class="navbar-brand" href="weather_data.html">Dataset</a>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Visualisations
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="cloud.html">Cloud</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="temperature.html">Temperature</a>
+                        <a class="dropdown-item" href="wind.html">Wind</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header style="padding-top: 25px; text-align: center ;">
+            <h1>Bobby's Weather Report</h1>
+            <h2>Weather Data</h2>
+        </header>
+        <table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">Number</th>
+<th title="Field #2">City</th>
+<th title="Field #3">Cloudiness</th>
+<th title="Field #4">Country</th>
+<th title="Field #5">Date</th>
+<th title="Field #6">Humidity</th>
+<th title="Field #7">Latitude</th>
+<th title="Field #8">Longitude</th>
+<th title="Field #9">Max Temperature</th>
+<th title="Field #10">Wind Speed</th>
+</tr></thead>
+<tbody><tr>
+<td align="right">0</td>
+<td>Strängnäs</td>
+<td align="right">47</td>
+<td>SE</td>
+<td>2021-04-17</td>
+<td align="right">80</td>
+<td align="right">59.3774</td>
+<td align="right">17.0312</td>
+<td align="right">3.33</td>
+<td align="right">2.57</td>
+</tr>
+<tr>
+<td align="right">1</td>
+<td>Mataura</td>
+<td align="right">70</td>
+<td>NZ</td>
+<td>2021-04-17</td>
+<td align="right">74</td>
+<td align="right">-46.1927</td>
+<td align="right">168.8643</td>
+<td align="right">15.0</td>
+<td align="right">3.58</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td>Qaqortoq</td>
+<td align="right">0</td>
+<td>GL</td>
+<td>2021-04-17</td>
+<td align="right">50</td>
+<td align="right">60.7167</td>
+<td align="right">-46.0333</td>
+<td align="right">-5.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td>Ushuaia</td>
+<td align="right">40</td>
+<td>AR</td>
+<td>2021-04-17</td>
+<td align="right">54</td>
+<td align="right">-54.8</td>
+<td align="right">-68.3</td>
+<td align="right">12.0</td>
+<td align="right">4.12</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td>Hermanus</td>
+<td align="right">0</td>
+<td>ZA</td>
+<td>2021-04-17</td>
+<td align="right">33</td>
+<td align="right">-34.4187</td>
+<td align="right">19.2345</td>
+<td align="right">20.56</td>
+<td align="right">0.89</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td>Lüderitz</td>
+<td align="right">7</td>
+<td>NA</td>
+<td>2021-04-17</td>
+<td align="right">38</td>
+<td align="right">-26.6481</td>
+<td align="right">15.1594</td>
+<td align="right">25.46</td>
+<td align="right">3.55</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td>Port Lincoln</td>
+<td align="right">6</td>
+<td>AU</td>
+<td>2021-04-17</td>
+<td align="right">53</td>
+<td align="right">-34.7333</td>
+<td align="right">135.8667</td>
+<td align="right">17.81</td>
+<td align="right">2.28</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td>Saskylakh</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">92</td>
+<td align="right">71.9167</td>
+<td align="right">114.0833</td>
+<td align="right">-13.38</td>
+<td align="right">5.72</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td>Warah</td>
+<td align="right">0</td>
+<td>PK</td>
+<td>2021-04-17</td>
+<td align="right">32</td>
+<td align="right">27.4481</td>
+<td align="right">67.7978</td>
+<td align="right">28.61</td>
+<td align="right">2.46</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td>Soloneshnoye</td>
+<td align="right">16</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">88</td>
+<td align="right">51.6544</td>
+<td align="right">84.3197</td>
+<td align="right">2.04</td>
+<td align="right">1.56</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td>Beidao</td>
+<td align="right">58</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">62</td>
+<td align="right">34.5686</td>
+<td align="right">105.8933</td>
+<td align="right">14.71</td>
+<td align="right">2.5</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td>Thompson</td>
+<td align="right">90</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">69</td>
+<td align="right">55.7435</td>
+<td align="right">-97.8558</td>
+<td align="right">-2.0</td>
+<td align="right">6.17</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td>Yangi Marg`ilon</td>
+<td align="right">100</td>
+<td>UZ</td>
+<td>2021-04-17</td>
+<td align="right">51</td>
+<td align="right">40.4272</td>
+<td align="right">71.7189</td>
+<td align="right">14.0</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">13</td>
+<td>Rikitea</td>
+<td align="right">50</td>
+<td>PF</td>
+<td>2021-04-17</td>
+<td align="right">68</td>
+<td align="right">-23.1203</td>
+<td align="right">-134.9692</td>
+<td align="right">25.22</td>
+<td align="right">2.39</td>
+</tr>
+<tr>
+<td align="right">14</td>
+<td>Bluff</td>
+<td align="right">90</td>
+<td>NZ</td>
+<td>2021-04-17</td>
+<td align="right">74</td>
+<td align="right">-46.6</td>
+<td align="right">168.3333</td>
+<td align="right">15.0</td>
+<td align="right">3.58</td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td>Fortuna</td>
+<td align="right">1</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">87</td>
+<td align="right">40.5982</td>
+<td align="right">-124.1573</td>
+<td align="right">15.56</td>
+<td align="right">4.63</td>
+</tr>
+<tr>
+<td align="right">16</td>
+<td>Tomatlán</td>
+<td align="right">0</td>
+<td>MX</td>
+<td>2021-04-17</td>
+<td align="right">50</td>
+<td align="right">19.9333</td>
+<td align="right">-105.25</td>
+<td align="right">24.91</td>
+<td align="right">2.69</td>
+</tr>
+<tr>
+<td align="right">17</td>
+<td>George Town</td>
+<td align="right">20</td>
+<td>MY</td>
+<td>2021-04-17</td>
+<td align="right">89</td>
+<td align="right">5.4112</td>
+<td align="right">100.3354</td>
+<td align="right">28.0</td>
+<td align="right">1.03</td>
+</tr>
+<tr>
+<td align="right">18</td>
+<td>Provideniya</td>
+<td align="right">92</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">90</td>
+<td align="right">64.3833</td>
+<td align="right">-173.3</td>
+<td align="right">0.16</td>
+<td align="right">2.76</td>
+</tr>
+<tr>
+<td align="right">19</td>
+<td>Tilichiki</td>
+<td align="right">8</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">76</td>
+<td align="right">60.4667</td>
+<td align="right">166.1</td>
+<td align="right">-1.44</td>
+<td align="right">3.88</td>
+</tr>
+<tr>
+<td align="right">20</td>
+<td>Whitehorse</td>
+<td align="right">1</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">28</td>
+<td align="right">60.7161</td>
+<td align="right">-135.0538</td>
+<td align="right">13.0</td>
+<td align="right">2.57</td>
+</tr>
+<tr>
+<td align="right">21</td>
+<td>Dunedin</td>
+<td align="right">100</td>
+<td>NZ</td>
+<td>2021-04-17</td>
+<td align="right">61</td>
+<td align="right">-45.8742</td>
+<td align="right">170.5036</td>
+<td align="right">13.67</td>
+<td align="right">1.72</td>
+</tr>
+<tr>
+<td align="right">22</td>
+<td>Vaini</td>
+<td align="right">20</td>
+<td>TO</td>
+<td>2021-04-17</td>
+<td align="right">69</td>
+<td align="right">-21.2</td>
+<td align="right">-175.2</td>
+<td align="right">27.0</td>
+<td align="right">2.57</td>
+</tr>
+<tr>
+<td align="right">23</td>
+<td>Conceição do Araguaia</td>
+<td align="right">0</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">100</td>
+<td align="right">-8.2578</td>
+<td align="right">-49.2647</td>
+<td align="right">23.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">24</td>
+<td>Longyearbyen</td>
+<td align="right">75</td>
+<td>SJ</td>
+<td>2021-04-17</td>
+<td align="right">69</td>
+<td align="right">78.2186</td>
+<td align="right">15.6401</td>
+<td align="right">0.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">25</td>
+<td>Takoradze</td>
+<td align="right">100</td>
+<td>GH</td>
+<td>2021-04-17</td>
+<td align="right">82</td>
+<td align="right">4.8845</td>
+<td align="right">-1.7554</td>
+<td align="right">26.63</td>
+<td align="right">3.22</td>
+</tr>
+<tr>
+<td align="right">26</td>
+<td>Jamestown</td>
+<td align="right">75</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">70</td>
+<td align="right">42.097</td>
+<td align="right">-79.2353</td>
+<td align="right">6.0</td>
+<td align="right">4.63</td>
+</tr>
+<tr>
+<td align="right">27</td>
+<td>Butaritari</td>
+<td align="right">98</td>
+<td>KI</td>
+<td>2021-04-17</td>
+<td align="right">77</td>
+<td align="right">3.0707</td>
+<td align="right">172.7902</td>
+<td align="right">27.94</td>
+<td align="right">4.04</td>
+</tr>
+<tr>
+<td align="right">28</td>
+<td>Tasiilaq</td>
+<td align="right">90</td>
+<td>GL</td>
+<td>2021-04-17</td>
+<td align="right">86</td>
+<td align="right">65.6145</td>
+<td align="right">-37.6368</td>
+<td align="right">-5.0</td>
+<td align="right">1.12</td>
+</tr>
+<tr>
+<td align="right">29</td>
+<td>Punta Arenas</td>
+<td align="right">75</td>
+<td>CL</td>
+<td>2021-04-17</td>
+<td align="right">54</td>
+<td align="right">-53.15</td>
+<td align="right">-70.9167</td>
+<td align="right">12.0</td>
+<td align="right">4.12</td>
+</tr>
+<tr>
+<td align="right">30</td>
+<td>Busselton</td>
+<td align="right">0</td>
+<td>AU</td>
+<td>2021-04-17</td>
+<td align="right">58</td>
+<td align="right">-33.65</td>
+<td align="right">115.3333</td>
+<td align="right">19.12</td>
+<td align="right">2.89</td>
+</tr>
+<tr>
+<td align="right">31</td>
+<td>Ostrovnoy</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">80</td>
+<td align="right">68.0531</td>
+<td align="right">39.5131</td>
+<td align="right">-2.08</td>
+<td align="right">3.25</td>
+</tr>
+<tr>
+<td align="right">32</td>
+<td>Cabo San Lucas</td>
+<td align="right">1</td>
+<td>MX</td>
+<td>2021-04-17</td>
+<td align="right">34</td>
+<td align="right">22.8909</td>
+<td align="right">-109.9124</td>
+<td align="right">27.0</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">33</td>
+<td>Avarua</td>
+<td align="right">36</td>
+<td>CK</td>
+<td>2021-04-17</td>
+<td align="right">74</td>
+<td align="right">-21.2078</td>
+<td align="right">-159.775</td>
+<td align="right">28.0</td>
+<td align="right">4.12</td>
+</tr>
+<tr>
+<td align="right">34</td>
+<td>Berlevåg</td>
+<td align="right">56</td>
+<td>NO</td>
+<td>2021-04-17</td>
+<td align="right">84</td>
+<td align="right">70.8578</td>
+<td align="right">29.0864</td>
+<td align="right">2.13</td>
+<td align="right">6.18</td>
+</tr>
+<tr>
+<td align="right">35</td>
+<td>Kashgar</td>
+<td align="right">40</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">25</td>
+<td align="right">39.4547</td>
+<td align="right">75.9797</td>
+<td align="right">16.0</td>
+<td align="right">4.0</td>
+</tr>
+<tr>
+<td align="right">36</td>
+<td>Kousséri</td>
+<td align="right">0</td>
+<td>CM</td>
+<td>2021-04-17</td>
+<td align="right">10</td>
+<td align="right">12.0769</td>
+<td align="right">15.0306</td>
+<td align="right">27.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">37</td>
+<td>Boa Vista</td>
+<td align="right">40</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">69</td>
+<td align="right">2.8197</td>
+<td align="right">-60.6733</td>
+<td align="right">28.0</td>
+<td align="right">3.09</td>
+</tr>
+<tr>
+<td align="right">38</td>
+<td>Airai</td>
+<td align="right">58</td>
+<td>TL</td>
+<td>2021-04-17</td>
+<td align="right">58</td>
+<td align="right">-8.9266</td>
+<td align="right">125.4092</td>
+<td align="right">21.57</td>
+<td align="right">1.34</td>
+</tr>
+<tr>
+<td align="right">39</td>
+<td>Langsa</td>
+<td align="right">100</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">84</td>
+<td align="right">4.4683</td>
+<td align="right">97.9683</td>
+<td align="right">25.84</td>
+<td align="right">0.92</td>
+</tr>
+<tr>
+<td align="right">40</td>
+<td>East London</td>
+<td align="right">11</td>
+<td>ZA</td>
+<td>2021-04-17</td>
+<td align="right">54</td>
+<td align="right">-33.0153</td>
+<td align="right">27.9116</td>
+<td align="right">17.04</td>
+<td align="right">4.1</td>
+</tr>
+<tr>
+<td align="right">41</td>
+<td>Vardø</td>
+<td align="right">46</td>
+<td>NO</td>
+<td>2021-04-17</td>
+<td align="right">89</td>
+<td align="right">70.3705</td>
+<td align="right">31.1107</td>
+<td align="right">1.46</td>
+<td align="right">4.68</td>
+</tr>
+<tr>
+<td align="right">42</td>
+<td>Tuktoyaktuk</td>
+<td align="right">75</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">86</td>
+<td align="right">69.4541</td>
+<td align="right">-133.0374</td>
+<td align="right">-4.0</td>
+<td align="right">3.09</td>
+</tr>
+<tr>
+<td align="right">43</td>
+<td>Atuona</td>
+<td align="right">64</td>
+<td>PF</td>
+<td>2021-04-17</td>
+<td align="right">73</td>
+<td align="right">-9.8</td>
+<td align="right">-139.0333</td>
+<td align="right">27.07</td>
+<td align="right">8.82</td>
+</tr>
+<tr>
+<td align="right">44</td>
+<td>Cape Town</td>
+<td align="right">0</td>
+<td>ZA</td>
+<td>2021-04-17</td>
+<td align="right">77</td>
+<td align="right">-33.9258</td>
+<td align="right">18.4232</td>
+<td align="right">20.56</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">45</td>
+<td>Örnsköldsvik</td>
+<td align="right">8</td>
+<td>SE</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">63.2909</td>
+<td align="right">18.7153</td>
+<td align="right">-2.0</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">46</td>
+<td>Fergus Falls</td>
+<td align="right">1</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">40</td>
+<td align="right">46.283</td>
+<td align="right">-96.0776</td>
+<td align="right">11.0</td>
+<td align="right">2.57</td>
+</tr>
+<tr>
+<td align="right">47</td>
+<td>Forsytheganj</td>
+<td align="right">100</td>
+<td>BY</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">52.6333</td>
+<td align="right">29.7333</td>
+<td align="right">7.75</td>
+<td align="right">4.08</td>
+</tr>
+<tr>
+<td align="right">48</td>
+<td>Port Alfred</td>
+<td align="right">6</td>
+<td>ZA</td>
+<td>2021-04-17</td>
+<td align="right">51</td>
+<td align="right">-33.5906</td>
+<td align="right">26.891</td>
+<td align="right">18.66</td>
+<td align="right">4.86</td>
+</tr>
+<tr>
+<td align="right">49</td>
+<td>Puerto Madryn</td>
+<td align="right">25</td>
+<td>AR</td>
+<td>2021-04-17</td>
+<td align="right">75</td>
+<td align="right">-42.7692</td>
+<td align="right">-65.0385</td>
+<td align="right">15.55</td>
+<td align="right">6.93</td>
+</tr>
+<tr>
+<td align="right">50</td>
+<td>Mandaguaçu</td>
+<td align="right">0</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">78</td>
+<td align="right">-23.3472</td>
+<td align="right">-52.0953</td>
+<td align="right">21.0</td>
+<td align="right">1.35</td>
+</tr>
+<tr>
+<td align="right">51</td>
+<td>Kuusamo</td>
+<td align="right">0</td>
+<td>FI</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">65.9667</td>
+<td align="right">29.1833</td>
+<td align="right">-4.0</td>
+<td align="right">0.51</td>
+</tr>
+<tr>
+<td align="right">52</td>
+<td>Iranshahr</td>
+<td align="right">0</td>
+<td>IR</td>
+<td>2021-04-17</td>
+<td align="right">18</td>
+<td align="right">27.2025</td>
+<td align="right">60.6848</td>
+<td align="right">22.0</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">53</td>
+<td>Cidreira</td>
+<td align="right">100</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">85</td>
+<td align="right">-30.1811</td>
+<td align="right">-50.2056</td>
+<td align="right">21.16</td>
+<td align="right">3.45</td>
+</tr>
+<tr>
+<td align="right">54</td>
+<td>Cochabamba</td>
+<td align="right">14</td>
+<td>BO</td>
+<td>2021-04-17</td>
+<td align="right">70</td>
+<td align="right">-17.3895</td>
+<td align="right">-66.1568</td>
+<td align="right">15.05</td>
+<td align="right">2.05</td>
+</tr>
+<tr>
+<td align="right">55</td>
+<td>Pemangkat</td>
+<td align="right">100</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">86</td>
+<td align="right">1.1667</td>
+<td align="right">108.9667</td>
+<td align="right">24.83</td>
+<td align="right">5.24</td>
+</tr>
+<tr>
+<td align="right">56</td>
+<td>Constantine</td>
+<td align="right">75</td>
+<td>DZ</td>
+<td>2021-04-17</td>
+<td align="right">87</td>
+<td align="right">36.365</td>
+<td align="right">6.6147</td>
+<td align="right">6.0</td>
+<td align="right">2.57</td>
+</tr>
+<tr>
+<td align="right">57</td>
+<td>Torbay</td>
+<td align="right">90</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">100</td>
+<td align="right">47.6666</td>
+<td align="right">-52.7314</td>
+<td align="right">2.78</td>
+<td align="right">7.72</td>
+</tr>
+<tr>
+<td align="right">58</td>
+<td>Kaitangata</td>
+<td align="right">48</td>
+<td>NZ</td>
+<td>2021-04-17</td>
+<td align="right">61</td>
+<td align="right">-46.2817</td>
+<td align="right">169.8464</td>
+<td align="right">16.11</td>
+<td align="right">1.79</td>
+</tr>
+<tr>
+<td align="right">59</td>
+<td>Pangkalanbuun</td>
+<td align="right">100</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">89</td>
+<td align="right">-2.6833</td>
+<td align="right">111.6167</td>
+<td align="right">26.12</td>
+<td align="right">0.31</td>
+</tr>
+<tr>
+<td align="right">60</td>
+<td>Naryan-Mar</td>
+<td align="right">69</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">67.6713</td>
+<td align="right">53.087</td>
+<td align="right">-12.42</td>
+<td align="right">2.79</td>
+</tr>
+<tr>
+<td align="right">61</td>
+<td>Namatanai</td>
+<td align="right">82</td>
+<td>PG</td>
+<td>2021-04-17</td>
+<td align="right">69</td>
+<td align="right">-3.6667</td>
+<td align="right">152.4333</td>
+<td align="right">29.47</td>
+<td align="right">6.17</td>
+</tr>
+<tr>
+<td align="right">62</td>
+<td>Arman&#39;</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">59.7</td>
+<td align="right">150.1667</td>
+<td align="right">-1.21</td>
+<td align="right">1.42</td>
+</tr>
+<tr>
+<td align="right">63</td>
+<td>Māgadi</td>
+<td align="right">82</td>
+<td>IN</td>
+<td>2021-04-17</td>
+<td align="right">83</td>
+<td align="right">12.9667</td>
+<td align="right">77.2333</td>
+<td align="right">24.0</td>
+<td align="right">0.51</td>
+</tr>
+<tr>
+<td align="right">64</td>
+<td>Tynda</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">73</td>
+<td align="right">55.1667</td>
+<td align="right">124.7167</td>
+<td align="right">1.71</td>
+<td align="right">1.7</td>
+</tr>
+<tr>
+<td align="right">65</td>
+<td>Gamba</td>
+<td align="right">100</td>
+<td>GA</td>
+<td>2021-04-17</td>
+<td align="right">89</td>
+<td align="right">-2.65</td>
+<td align="right">10.0</td>
+<td align="right">25.89</td>
+<td align="right">2.07</td>
+</tr>
+<tr>
+<td align="right">66</td>
+<td>Saint-Philippe</td>
+<td align="right">90</td>
+<td>RE</td>
+<td>2021-04-17</td>
+<td align="right">88</td>
+<td align="right">-21.3585</td>
+<td align="right">55.7679</td>
+<td align="right">24.0</td>
+<td align="right">3.6</td>
+</tr>
+<tr>
+<td align="right">67</td>
+<td>Qaanaaq</td>
+<td align="right">100</td>
+<td>GL</td>
+<td>2021-04-17</td>
+<td align="right">97</td>
+<td align="right">77.484</td>
+<td align="right">-69.3632</td>
+<td align="right">-18.8</td>
+<td align="right">2.84</td>
+</tr>
+<tr>
+<td align="right">68</td>
+<td>Severo-Kuril&#39;sk</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">60</td>
+<td align="right">50.6789</td>
+<td align="right">156.125</td>
+<td align="right">3.65</td>
+<td align="right">4.46</td>
+</tr>
+<tr>
+<td align="right">69</td>
+<td>Atherton</td>
+<td align="right">100</td>
+<td>GB</td>
+<td>2021-04-17</td>
+<td align="right">82</td>
+<td align="right">53.5237</td>
+<td align="right">-2.4935</td>
+<td align="right">6.67</td>
+<td align="right">1.72</td>
+</tr>
+<tr>
+<td align="right">70</td>
+<td>Chilliwack</td>
+<td align="right">0</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">29</td>
+<td align="right">49.1747</td>
+<td align="right">-121.9443</td>
+<td align="right">26.11</td>
+<td align="right">2.57</td>
+</tr>
+<tr>
+<td align="right">71</td>
+<td>Bambous Virieux</td>
+<td align="right">75</td>
+<td>MU</td>
+<td>2021-04-17</td>
+<td align="right">94</td>
+<td align="right">-20.3428</td>
+<td align="right">57.7575</td>
+<td align="right">24.44</td>
+<td align="right">2.57</td>
+</tr>
+<tr>
+<td align="right">72</td>
+<td>Culaman</td>
+<td align="right">75</td>
+<td>PH</td>
+<td>2021-04-17</td>
+<td align="right">94</td>
+<td align="right">5.9603</td>
+<td align="right">125.6586</td>
+<td align="right">23.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">73</td>
+<td>Bengkulu</td>
+<td align="right">98</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">83</td>
+<td align="right">-3.8004</td>
+<td align="right">102.2655</td>
+<td align="right">25.09</td>
+<td align="right">1.42</td>
+</tr>
+<tr>
+<td align="right">74</td>
+<td>Nizhniy Chir</td>
+<td align="right">16</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">76</td>
+<td align="right">48.3597</td>
+<td align="right">43.0865</td>
+<td align="right">7.49</td>
+<td align="right">1.83</td>
+</tr>
+<tr>
+<td align="right">75</td>
+<td>Bredasdorp</td>
+<td align="right">0</td>
+<td>ZA</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">-34.5322</td>
+<td align="right">20.0403</td>
+<td align="right">9.0</td>
+<td align="right">3.09</td>
+</tr>
+<tr>
+<td align="right">76</td>
+<td>Fes</td>
+<td align="right">0</td>
+<td>MA</td>
+<td>2021-04-17</td>
+<td align="right">94</td>
+<td align="right">34.0372</td>
+<td align="right">-4.9998</td>
+<td align="right">12.0</td>
+<td align="right">3.09</td>
+</tr>
+<tr>
+<td align="right">77</td>
+<td>Caravelas</td>
+<td align="right">77</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">78</td>
+<td align="right">-17.7125</td>
+<td align="right">-39.2481</td>
+<td align="right">23.21</td>
+<td align="right">2.68</td>
+</tr>
+<tr>
+<td align="right">78</td>
+<td>Puerto Ayora</td>
+<td align="right">29</td>
+<td>EC</td>
+<td>2021-04-17</td>
+<td align="right">97</td>
+<td align="right">-0.7393</td>
+<td align="right">-90.3518</td>
+<td align="right">24.44</td>
+<td align="right">1.79</td>
+</tr>
+<tr>
+<td align="right">79</td>
+<td>Mossamedes</td>
+<td align="right">0</td>
+<td>AO</td>
+<td>2021-04-17</td>
+<td align="right">65</td>
+<td align="right">-15.1961</td>
+<td align="right">12.1522</td>
+<td align="right">27.86</td>
+<td align="right">0.78</td>
+</tr>
+<tr>
+<td align="right">80</td>
+<td>Manokwari</td>
+<td align="right">100</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">71</td>
+<td align="right">-0.8667</td>
+<td align="right">134.0833</td>
+<td align="right">27.68</td>
+<td align="right">0.87</td>
+</tr>
+<tr>
+<td align="right">81</td>
+<td>Pingliang</td>
+<td align="right">4</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">44</td>
+<td align="right">35.5392</td>
+<td align="right">106.6861</td>
+<td align="right">11.6</td>
+<td align="right">1.66</td>
+</tr>
+<tr>
+<td align="right">82</td>
+<td>Klaksvík</td>
+<td align="right">100</td>
+<td>FO</td>
+<td>2021-04-17</td>
+<td align="right">87</td>
+<td align="right">62.2266</td>
+<td align="right">-6.589</td>
+<td align="right">8.0</td>
+<td align="right">13.89</td>
+</tr>
+<tr>
+<td align="right">83</td>
+<td>Zeya</td>
+<td align="right">96</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">53</td>
+<td align="right">53.75</td>
+<td align="right">127.2667</td>
+<td align="right">6.31</td>
+<td align="right">3.82</td>
+</tr>
+<tr>
+<td align="right">84</td>
+<td>Hilo</td>
+<td align="right">1</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">54</td>
+<td align="right">19.7297</td>
+<td align="right">-155.09</td>
+<td align="right">27.0</td>
+<td align="right">3.6</td>
+</tr>
+<tr>
+<td align="right">85</td>
+<td>Martapura</td>
+<td align="right">100</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">78</td>
+<td align="right">-3.4167</td>
+<td align="right">114.85</td>
+<td align="right">27.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">86</td>
+<td>Hobart</td>
+<td align="right">75</td>
+<td>AU</td>
+<td>2021-04-17</td>
+<td align="right">51</td>
+<td align="right">-42.8794</td>
+<td align="right">147.3294</td>
+<td align="right">16.67</td>
+<td align="right">8.75</td>
+</tr>
+<tr>
+<td align="right">87</td>
+<td>Bilma</td>
+<td align="right">100</td>
+<td>NE</td>
+<td>2021-04-17</td>
+<td align="right">8</td>
+<td align="right">18.6853</td>
+<td align="right">12.9164</td>
+<td align="right">29.67</td>
+<td align="right">3.36</td>
+</tr>
+<tr>
+<td align="right">88</td>
+<td>Ulaangom</td>
+<td align="right">6</td>
+<td>MN</td>
+<td>2021-04-17</td>
+<td align="right">50</td>
+<td align="right">49.9811</td>
+<td align="right">92.0667</td>
+<td align="right">6.28</td>
+<td align="right">1.98</td>
+</tr>
+<tr>
+<td align="right">89</td>
+<td>Castro</td>
+<td align="right">10</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">94</td>
+<td align="right">-24.7911</td>
+<td align="right">-50.0119</td>
+<td align="right">14.26</td>
+<td align="right">1.23</td>
+</tr>
+<tr>
+<td align="right">90</td>
+<td>Albany</td>
+<td align="right">89</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">75</td>
+<td align="right">42.6001</td>
+<td align="right">-73.9662</td>
+<td align="right">7.78</td>
+<td align="right">1.27</td>
+</tr>
+<tr>
+<td align="right">91</td>
+<td>Galle</td>
+<td align="right">100</td>
+<td>LK</td>
+<td>2021-04-17</td>
+<td align="right">87</td>
+<td align="right">6.0367</td>
+<td align="right">80.217</td>
+<td align="right">25.42</td>
+<td align="right">1.61</td>
+</tr>
+<tr>
+<td align="right">92</td>
+<td>Hithadhoo</td>
+<td align="right">99</td>
+<td>MV</td>
+<td>2021-04-17</td>
+<td align="right">63</td>
+<td align="right">-0.6</td>
+<td align="right">73.0833</td>
+<td align="right">27.73</td>
+<td align="right">1.92</td>
+</tr>
+<tr>
+<td align="right">93</td>
+<td>Bezhetsk</td>
+<td align="right">0</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">83</td>
+<td align="right">57.7851</td>
+<td align="right">36.6965</td>
+<td align="right">3.5</td>
+<td align="right">3.99</td>
+</tr>
+<tr>
+<td align="right">94</td>
+<td>Port Macquarie</td>
+<td align="right">57</td>
+<td>AU</td>
+<td>2021-04-17</td>
+<td align="right">70</td>
+<td align="right">-31.4333</td>
+<td align="right">152.9167</td>
+<td align="right">20.56</td>
+<td align="right">2.68</td>
+</tr>
+<tr>
+<td align="right">95</td>
+<td>Fairbanks</td>
+<td align="right">1</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">30</td>
+<td align="right">64.8378</td>
+<td align="right">-147.7164</td>
+<td align="right">12.0</td>
+<td align="right">4.12</td>
+</tr>
+<tr>
+<td align="right">96</td>
+<td>San Patricio</td>
+<td align="right">90</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">67</td>
+<td align="right">28.017</td>
+<td align="right">-97.5169</td>
+<td align="right">17.0</td>
+<td align="right">7.2</td>
+</tr>
+<tr>
+<td align="right">97</td>
+<td>Richards Bay</td>
+<td align="right">0</td>
+<td>ZA</td>
+<td>2021-04-17</td>
+<td align="right">75</td>
+<td align="right">-28.783</td>
+<td align="right">32.0377</td>
+<td align="right">15.75</td>
+<td align="right">4.57</td>
+</tr>
+<tr>
+<td align="right">98</td>
+<td>Pontal do Paraná</td>
+<td align="right">100</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">87</td>
+<td align="right">-25.6533</td>
+<td align="right">-48.5128</td>
+<td align="right">15.56</td>
+<td align="right">1.34</td>
+</tr>
+<tr>
+<td align="right">99</td>
+<td>La Ronge</td>
+<td align="right">100</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">52</td>
+<td align="right">55.1001</td>
+<td align="right">-105.2842</td>
+<td align="right">5.0</td>
+<td align="right">6.69</td>
+</tr>
+<tr>
+<td align="right">100</td>
+<td>Lixouri</td>
+<td align="right">100</td>
+<td>GR</td>
+<td>2021-04-17</td>
+<td align="right">90</td>
+<td align="right">38.2019</td>
+<td align="right">20.4314</td>
+<td align="right">14.57</td>
+<td align="right">4.41</td>
+</tr>
+<tr>
+<td align="right">101</td>
+<td>Lakatoro</td>
+<td align="right">96</td>
+<td>VU</td>
+<td>2021-04-17</td>
+<td align="right">65</td>
+<td align="right">-16.0999</td>
+<td align="right">167.4164</td>
+<td align="right">29.62</td>
+<td align="right">3.27</td>
+</tr>
+<tr>
+<td align="right">102</td>
+<td>Salice Salentino</td>
+<td align="right">20</td>
+<td>IT</td>
+<td>2021-04-17</td>
+<td align="right">87</td>
+<td align="right">40.387</td>
+<td align="right">17.9607</td>
+<td align="right">12.0</td>
+<td align="right">1.03</td>
+</tr>
+<tr>
+<td align="right">103</td>
+<td>Banjar</td>
+<td align="right">20</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">83</td>
+<td align="right">-8.19</td>
+<td align="right">114.9675</td>
+<td align="right">28.0</td>
+<td align="right">1.03</td>
+</tr>
+<tr>
+<td align="right">104</td>
+<td>Lorengau</td>
+<td align="right">94</td>
+<td>PG</td>
+<td>2021-04-17</td>
+<td align="right">69</td>
+<td align="right">-2.0226</td>
+<td align="right">147.2712</td>
+<td align="right">28.72</td>
+<td align="right">4.02</td>
+</tr>
+<tr>
+<td align="right">105</td>
+<td>Nador</td>
+<td align="right">0</td>
+<td>MA</td>
+<td>2021-04-17</td>
+<td align="right">88</td>
+<td align="right">35.174</td>
+<td align="right">-2.9287</td>
+<td align="right">14.0</td>
+<td align="right">1.03</td>
+</tr>
+<tr>
+<td align="right">106</td>
+<td>Yicheng</td>
+<td align="right">100</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">56</td>
+<td align="right">31.3705</td>
+<td align="right">119.8703</td>
+<td align="right">14.81</td>
+<td align="right">2.97</td>
+</tr>
+<tr>
+<td align="right">107</td>
+<td>Bānswāra</td>
+<td align="right">0</td>
+<td>IN</td>
+<td>2021-04-17</td>
+<td align="right">29</td>
+<td align="right">23.55</td>
+<td align="right">74.45</td>
+<td align="right">27.34</td>
+<td align="right">0.15</td>
+</tr>
+<tr>
+<td align="right">108</td>
+<td>Rome</td>
+<td align="right">75</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">66</td>
+<td align="right">43.2128</td>
+<td align="right">-75.4557</td>
+<td align="right">8.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">109</td>
+<td>Esperance</td>
+<td align="right">0</td>
+<td>AU</td>
+<td>2021-04-17</td>
+<td align="right">77</td>
+<td align="right">-33.8667</td>
+<td align="right">121.9</td>
+<td align="right">15.0</td>
+<td align="right">5.66</td>
+</tr>
+<tr>
+<td align="right">110</td>
+<td>Port Elizabeth</td>
+<td align="right">0</td>
+<td>ZA</td>
+<td>2021-04-17</td>
+<td align="right">94</td>
+<td align="right">-33.918</td>
+<td align="right">25.5701</td>
+<td align="right">13.0</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">111</td>
+<td>Leh</td>
+<td align="right">100</td>
+<td>IN</td>
+<td>2021-04-17</td>
+<td align="right">85</td>
+<td align="right">34.1667</td>
+<td align="right">77.5833</td>
+<td align="right">1.05</td>
+<td align="right">2.62</td>
+</tr>
+<tr>
+<td align="right">112</td>
+<td>Flinders</td>
+<td align="right">10</td>
+<td>AU</td>
+<td>2021-04-17</td>
+<td align="right">66</td>
+<td align="right">-34.5833</td>
+<td align="right">150.8552</td>
+<td align="right">20.56</td>
+<td align="right">1.34</td>
+</tr>
+<tr>
+<td align="right">113</td>
+<td>Chokurdakh</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">84</td>
+<td align="right">70.6333</td>
+<td align="right">147.9167</td>
+<td align="right">-7.83</td>
+<td align="right">2.56</td>
+</tr>
+<tr>
+<td align="right">114</td>
+<td>Hualmay</td>
+<td align="right">74</td>
+<td>PE</td>
+<td>2021-04-17</td>
+<td align="right">87</td>
+<td align="right">-11.0964</td>
+<td align="right">-77.6139</td>
+<td align="right">20.0</td>
+<td align="right">3.24</td>
+</tr>
+<tr>
+<td align="right">115</td>
+<td>Mayo</td>
+<td align="right">100</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">81</td>
+<td align="right">38.8876</td>
+<td align="right">-76.5119</td>
+<td align="right">11.67</td>
+<td align="right">1.97</td>
+</tr>
+<tr>
+<td align="right">116</td>
+<td>Mar del Plata</td>
+<td align="right">90</td>
+<td>AR</td>
+<td>2021-04-17</td>
+<td align="right">100</td>
+<td align="right">-38.0023</td>
+<td align="right">-57.5575</td>
+<td align="right">19.44</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">117</td>
+<td>New Norfolk</td>
+<td align="right">100</td>
+<td>AU</td>
+<td>2021-04-17</td>
+<td align="right">76</td>
+<td align="right">-42.7826</td>
+<td align="right">147.0587</td>
+<td align="right">16.67</td>
+<td align="right">2.24</td>
+</tr>
+<tr>
+<td align="right">118</td>
+<td>Nikolskoye</td>
+<td align="right">0</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">39</td>
+<td align="right">59.7035</td>
+<td align="right">30.7861</td>
+<td align="right">8.0</td>
+<td align="right">3.0</td>
+</tr>
+<tr>
+<td align="right">119</td>
+<td>Vila Velha</td>
+<td align="right">90</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">100</td>
+<td align="right">-20.3297</td>
+<td align="right">-40.2925</td>
+<td align="right">25.0</td>
+<td align="right">3.6</td>
+</tr>
+<tr>
+<td align="right">120</td>
+<td>Puerto Carreño</td>
+<td align="right">35</td>
+<td>CO</td>
+<td>2021-04-17</td>
+<td align="right">70</td>
+<td align="right">6.189</td>
+<td align="right">-67.4859</td>
+<td align="right">27.76</td>
+<td align="right">2.16</td>
+</tr>
+<tr>
+<td align="right">121</td>
+<td>Karratha</td>
+<td align="right">0</td>
+<td>AU</td>
+<td>2021-04-17</td>
+<td align="right">37</td>
+<td align="right">-20.7377</td>
+<td align="right">116.8463</td>
+<td align="right">30.03</td>
+<td align="right">5.24</td>
+</tr>
+<tr>
+<td align="right">122</td>
+<td>Washougal</td>
+<td align="right">1</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">16</td>
+<td align="right">45.5826</td>
+<td align="right">-122.3534</td>
+<td align="right">29.0</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">123</td>
+<td>Ilulissat</td>
+<td align="right">90</td>
+<td>GL</td>
+<td>2021-04-17</td>
+<td align="right">66</td>
+<td align="right">69.2167</td>
+<td align="right">-51.1</td>
+<td align="right">-13.0</td>
+<td align="right">7.2</td>
+</tr>
+<tr>
+<td align="right">124</td>
+<td>Laguna</td>
+<td align="right">1</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">7</td>
+<td align="right">38.421</td>
+<td align="right">-121.4238</td>
+<td align="right">31.0</td>
+<td align="right">6.69</td>
+</tr>
+<tr>
+<td align="right">125</td>
+<td>Satun</td>
+<td align="right">40</td>
+<td>TH</td>
+<td>2021-04-17</td>
+<td align="right">100</td>
+<td align="right">6.8333</td>
+<td align="right">100.0</td>
+<td align="right">28.0</td>
+<td align="right">1.03</td>
+</tr>
+<tr>
+<td align="right">126</td>
+<td>Lavrentiya</td>
+<td align="right">59</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">87</td>
+<td align="right">65.5833</td>
+<td align="right">-171.0</td>
+<td align="right">-0.04</td>
+<td align="right">4.56</td>
+</tr>
+<tr>
+<td align="right">127</td>
+<td>Waipawa</td>
+<td align="right">2</td>
+<td>NZ</td>
+<td>2021-04-17</td>
+<td align="right">51</td>
+<td align="right">-41.4122</td>
+<td align="right">175.5153</td>
+<td align="right">17.78</td>
+<td align="right">5.14</td>
+</tr>
+<tr>
+<td align="right">128</td>
+<td>Ingham</td>
+<td align="right">90</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">50</td>
+<td align="right">42.6</td>
+<td align="right">-84.3833</td>
+<td align="right">13.0</td>
+<td align="right">1.26</td>
+</tr>
+<tr>
+<td align="right">129</td>
+<td>Tiksi</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">85</td>
+<td align="right">71.6872</td>
+<td align="right">128.8694</td>
+<td align="right">-13.58</td>
+<td align="right">4.23</td>
+</tr>
+<tr>
+<td align="right">130</td>
+<td>Zaranj</td>
+<td align="right">0</td>
+<td>AF</td>
+<td>2021-04-17</td>
+<td align="right">30</td>
+<td align="right">30.9667</td>
+<td align="right">61.8833</td>
+<td align="right">21.0</td>
+<td align="right">10.8</td>
+</tr>
+<tr>
+<td align="right">131</td>
+<td>Mehrān</td>
+<td align="right">0</td>
+<td>IR</td>
+<td>2021-04-17</td>
+<td align="right">37</td>
+<td align="right">33.1222</td>
+<td align="right">46.1646</td>
+<td align="right">12.0</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">132</td>
+<td>Lazarev</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">99</td>
+<td align="right">52.225</td>
+<td align="right">141.5131</td>
+<td align="right">0.39</td>
+<td align="right">3.27</td>
+</tr>
+<tr>
+<td align="right">133</td>
+<td>Kahului</td>
+<td align="right">40</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">65</td>
+<td align="right">20.8947</td>
+<td align="right">-156.47</td>
+<td align="right">26.0</td>
+<td align="right">5.14</td>
+</tr>
+<tr>
+<td align="right">134</td>
+<td>Arrondissement de Foix</td>
+<td align="right">82</td>
+<td>FR</td>
+<td>2021-04-17</td>
+<td align="right">19</td>
+<td align="right">42.8333</td>
+<td align="right">1.5833</td>
+<td align="right">6.67</td>
+<td align="right">1.52</td>
+</tr>
+<tr>
+<td align="right">135</td>
+<td>Coyhaique</td>
+<td align="right">75</td>
+<td>CL</td>
+<td>2021-04-17</td>
+<td align="right">81</td>
+<td align="right">-45.5752</td>
+<td align="right">-72.0662</td>
+<td align="right">10.0</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">136</td>
+<td>Rincon</td>
+<td align="right">90</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">77</td>
+<td align="right">32.296</td>
+<td align="right">-81.2354</td>
+<td align="right">20.0</td>
+<td align="right">4.12</td>
+</tr>
+<tr>
+<td align="right">137</td>
+<td>Schöneiche</td>
+<td align="right">20</td>
+<td>DE</td>
+<td>2021-04-17</td>
+<td align="right">100</td>
+<td align="right">52.4667</td>
+<td align="right">13.6833</td>
+<td align="right">7.22</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">138</td>
+<td>Cândido de Abreu</td>
+<td align="right">30</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">92</td>
+<td align="right">-24.5669</td>
+<td align="right">-51.3333</td>
+<td align="right">17.38</td>
+<td align="right">1.36</td>
+</tr>
+<tr>
+<td align="right">139</td>
+<td>Cherskiy</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">71</td>
+<td align="right">68.75</td>
+<td align="right">161.3</td>
+<td align="right">-2.44</td>
+<td align="right">12.37</td>
+</tr>
+<tr>
+<td align="right">140</td>
+<td>Havøysund</td>
+<td align="right">77</td>
+<td>NO</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">70.9963</td>
+<td align="right">24.6622</td>
+<td align="right">1.0</td>
+<td align="right">1.03</td>
+</tr>
+<tr>
+<td align="right">141</td>
+<td>San Policarpo</td>
+<td align="right">100</td>
+<td>PH</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">12.1791</td>
+<td align="right">125.5072</td>
+<td align="right">25.2</td>
+<td align="right">12.52</td>
+</tr>
+<tr>
+<td align="right">142</td>
+<td>Hamilton</td>
+<td align="right">80</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">82</td>
+<td align="right">39.1834</td>
+<td align="right">-84.5333</td>
+<td align="right">10.0</td>
+<td align="right">1.01</td>
+</tr>
+<tr>
+<td align="right">143</td>
+<td>Paamiut</td>
+<td align="right">0</td>
+<td>GL</td>
+<td>2021-04-17</td>
+<td align="right">63</td>
+<td align="right">61.994</td>
+<td align="right">-49.6678</td>
+<td align="right">-10.16</td>
+<td align="right">3.77</td>
+</tr>
+<tr>
+<td align="right">144</td>
+<td>Ponta do Sol</td>
+<td align="right">70</td>
+<td>PT</td>
+<td>2021-04-17</td>
+<td align="right">71</td>
+<td align="right">32.6667</td>
+<td align="right">-17.1</td>
+<td align="right">14.44</td>
+<td align="right">0.89</td>
+</tr>
+<tr>
+<td align="right">145</td>
+<td>Tura</td>
+<td align="right">1</td>
+<td>IN</td>
+<td>2021-04-17</td>
+<td align="right">78</td>
+<td align="right">25.5198</td>
+<td align="right">90.2201</td>
+<td align="right">21.61</td>
+<td align="right">1.65</td>
+</tr>
+<tr>
+<td align="right">146</td>
+<td>Kapaa</td>
+<td align="right">90</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">60</td>
+<td align="right">22.0752</td>
+<td align="right">-159.319</td>
+<td align="right">24.0</td>
+<td align="right">6.17</td>
+</tr>
+<tr>
+<td align="right">147</td>
+<td>Vzmorye</td>
+<td align="right">0</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">54.6961</td>
+<td align="right">20.2361</td>
+<td align="right">6.0</td>
+<td align="right">1.0</td>
+</tr>
+<tr>
+<td align="right">148</td>
+<td>Sørland</td>
+<td align="right">94</td>
+<td>NO</td>
+<td>2021-04-17</td>
+<td align="right">72</td>
+<td align="right">67.667</td>
+<td align="right">12.6934</td>
+<td align="right">5.32</td>
+<td align="right">4.83</td>
+</tr>
+<tr>
+<td align="right">149</td>
+<td>Sohna</td>
+<td align="right">0</td>
+<td>IN</td>
+<td>2021-04-17</td>
+<td align="right">60</td>
+<td align="right">28.25</td>
+<td align="right">77.0667</td>
+<td align="right">21.0</td>
+<td align="right">1.64</td>
+</tr>
+<tr>
+<td align="right">150</td>
+<td>Warwick</td>
+<td align="right">90</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">66</td>
+<td align="right">41.7001</td>
+<td align="right">-71.4162</td>
+<td align="right">8.0</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">151</td>
+<td>Geraldton</td>
+<td align="right">0</td>
+<td>AU</td>
+<td>2021-04-17</td>
+<td align="right">35</td>
+<td align="right">-28.7667</td>
+<td align="right">114.6</td>
+<td align="right">22.0</td>
+<td align="right">2.57</td>
+</tr>
+<tr>
+<td align="right">152</td>
+<td>Mahébourg</td>
+<td align="right">75</td>
+<td>MU</td>
+<td>2021-04-17</td>
+<td align="right">94</td>
+<td align="right">-20.4081</td>
+<td align="right">57.7</td>
+<td align="right">24.0</td>
+<td align="right">2.57</td>
+</tr>
+<tr>
+<td align="right">153</td>
+<td>Tual</td>
+<td align="right">100</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">76</td>
+<td align="right">-5.6667</td>
+<td align="right">132.75</td>
+<td align="right">27.34</td>
+<td align="right">4.58</td>
+</tr>
+<tr>
+<td align="right">154</td>
+<td>Khatanga</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">92</td>
+<td align="right">71.9667</td>
+<td align="right">102.5</td>
+<td align="right">-17.83</td>
+<td align="right">5.87</td>
+</tr>
+<tr>
+<td align="right">155</td>
+<td>Lebu</td>
+<td align="right">100</td>
+<td>CL</td>
+<td>2021-04-17</td>
+<td align="right">91</td>
+<td align="right">-37.6167</td>
+<td align="right">-73.65</td>
+<td align="right">12.86</td>
+<td align="right">1.01</td>
+</tr>
+<tr>
+<td align="right">156</td>
+<td>Bandarbeyla</td>
+<td align="right">22</td>
+<td>SO</td>
+<td>2021-04-17</td>
+<td align="right">80</td>
+<td align="right">9.4942</td>
+<td align="right">50.8122</td>
+<td align="right">26.64</td>
+<td align="right">2.26</td>
+</tr>
+<tr>
+<td align="right">157</td>
+<td>Pangoa</td>
+<td align="right">90</td>
+<td>PE</td>
+<td>2021-04-17</td>
+<td align="right">97</td>
+<td align="right">-12.1167</td>
+<td align="right">-73.0</td>
+<td align="right">20.63</td>
+<td align="right">0.64</td>
+</tr>
+<tr>
+<td align="right">158</td>
+<td>Leningradskiy</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">83</td>
+<td align="right">69.3833</td>
+<td align="right">178.4167</td>
+<td align="right">1.65</td>
+<td align="right">3.88</td>
+</tr>
+<tr>
+<td align="right">159</td>
+<td>Quatre Cocos</td>
+<td align="right">75</td>
+<td>MU</td>
+<td>2021-04-17</td>
+<td align="right">94</td>
+<td align="right">-20.2078</td>
+<td align="right">57.7625</td>
+<td align="right">24.44</td>
+<td align="right">2.57</td>
+</tr>
+<tr>
+<td align="right">160</td>
+<td>Senneterre</td>
+<td align="right">75</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">50</td>
+<td align="right">48.3835</td>
+<td align="right">-77.2328</td>
+<td align="right">11.0</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">161</td>
+<td>Carnarvon</td>
+<td align="right">43</td>
+<td>AU</td>
+<td>2021-04-17</td>
+<td align="right">46</td>
+<td align="right">-24.8667</td>
+<td align="right">113.6333</td>
+<td align="right">25.87</td>
+<td align="right">1.25</td>
+</tr>
+<tr>
+<td align="right">162</td>
+<td>Bintulu</td>
+<td align="right">40</td>
+<td>MY</td>
+<td>2021-04-17</td>
+<td align="right">94</td>
+<td align="right">3.1667</td>
+<td align="right">113.0333</td>
+<td align="right">25.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">163</td>
+<td>Ouésso</td>
+<td align="right">100</td>
+<td>CG</td>
+<td>2021-04-17</td>
+<td align="right">78</td>
+<td align="right">1.6136</td>
+<td align="right">16.0517</td>
+<td align="right">22.23</td>
+<td align="right">1.05</td>
+</tr>
+<tr>
+<td align="right">164</td>
+<td>Aykhal</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">95</td>
+<td align="right">66.0</td>
+<td align="right">111.5</td>
+<td align="right">-16.72</td>
+<td align="right">9.09</td>
+</tr>
+<tr>
+<td align="right">165</td>
+<td>Kimbe</td>
+<td align="right">96</td>
+<td>PG</td>
+<td>2021-04-17</td>
+<td align="right">65</td>
+<td align="right">-5.5502</td>
+<td align="right">150.1429</td>
+<td align="right">29.97</td>
+<td align="right">2.33</td>
+</tr>
+<tr>
+<td align="right">166</td>
+<td>Khartoum</td>
+<td align="right">0</td>
+<td>SD</td>
+<td>2021-04-17</td>
+<td align="right">14</td>
+<td align="right">15.5518</td>
+<td align="right">32.5324</td>
+<td align="right">27.22</td>
+<td align="right">5.65</td>
+</tr>
+<tr>
+<td align="right">167</td>
+<td>Bolshaya Martynovka</td>
+<td align="right">17</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">80</td>
+<td align="right">47.271</td>
+<td align="right">41.6679</td>
+<td align="right">6.64</td>
+<td align="right">1.1</td>
+</tr>
+<tr>
+<td align="right">168</td>
+<td>Taoudenni</td>
+<td align="right">0</td>
+<td>ML</td>
+<td>2021-04-17</td>
+<td align="right">15</td>
+<td align="right">22.6783</td>
+<td align="right">-3.9836</td>
+<td align="right">27.89</td>
+<td align="right">3.71</td>
+</tr>
+<tr>
+<td align="right">169</td>
+<td>Batemans Bay</td>
+<td align="right">7</td>
+<td>AU</td>
+<td>2021-04-17</td>
+<td align="right">60</td>
+<td align="right">-35.7167</td>
+<td align="right">150.1833</td>
+<td align="right">18.33</td>
+<td align="right">0.45</td>
+</tr>
+<tr>
+<td align="right">170</td>
+<td>Touros</td>
+<td align="right">75</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">88</td>
+<td align="right">-5.1989</td>
+<td align="right">-35.4608</td>
+<td align="right">25.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">171</td>
+<td>Nanortalik</td>
+<td align="right">0</td>
+<td>GL</td>
+<td>2021-04-17</td>
+<td align="right">56</td>
+<td align="right">60.1432</td>
+<td align="right">-45.2371</td>
+<td align="right">-3.64</td>
+<td align="right">12.46</td>
+</tr>
+<tr>
+<td align="right">172</td>
+<td>Narsaq</td>
+<td align="right">0</td>
+<td>GL</td>
+<td>2021-04-17</td>
+<td align="right">50</td>
+<td align="right">60.9167</td>
+<td align="right">-46.05</td>
+<td align="right">-5.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">173</td>
+<td>Eyl</td>
+<td align="right">98</td>
+<td>SO</td>
+<td>2021-04-17</td>
+<td align="right">64</td>
+<td align="right">7.9803</td>
+<td align="right">49.8164</td>
+<td align="right">27.91</td>
+<td align="right">4.68</td>
+</tr>
+<tr>
+<td align="right">174</td>
+<td>Alofi</td>
+<td align="right">7</td>
+<td>NU</td>
+<td>2021-04-17</td>
+<td align="right">69</td>
+<td align="right">-19.0595</td>
+<td align="right">-169.9187</td>
+<td align="right">28.0</td>
+<td align="right">3.09</td>
+</tr>
+<tr>
+<td align="right">175</td>
+<td>Byron Bay</td>
+<td align="right">90</td>
+<td>AU</td>
+<td>2021-04-17</td>
+<td align="right">68</td>
+<td align="right">-28.65</td>
+<td align="right">153.6167</td>
+<td align="right">20.0</td>
+<td align="right">5.66</td>
+</tr>
+<tr>
+<td align="right">176</td>
+<td>Rio Verde de Mato Grosso</td>
+<td align="right">2</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">76</td>
+<td align="right">-18.9181</td>
+<td align="right">-54.8442</td>
+<td align="right">21.75</td>
+<td align="right">1.44</td>
+</tr>
+<tr>
+<td align="right">177</td>
+<td>Ancud</td>
+<td align="right">100</td>
+<td>CL</td>
+<td>2021-04-17</td>
+<td align="right">94</td>
+<td align="right">-41.8697</td>
+<td align="right">-73.8203</td>
+<td align="right">12.0</td>
+<td align="right">4.12</td>
+</tr>
+<tr>
+<td align="right">178</td>
+<td>Natal</td>
+<td align="right">75</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">89</td>
+<td align="right">-5.795</td>
+<td align="right">-35.2094</td>
+<td align="right">26.0</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">179</td>
+<td>Sikandra Rao</td>
+<td align="right">0</td>
+<td>IN</td>
+<td>2021-04-17</td>
+<td align="right">41</td>
+<td align="right">27.7</td>
+<td align="right">78.4</td>
+<td align="right">23.51</td>
+<td align="right">1.6</td>
+</tr>
+<tr>
+<td align="right">180</td>
+<td>Coos Bay</td>
+<td align="right">90</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">43.3665</td>
+<td align="right">-124.2179</td>
+<td align="right">21.67</td>
+<td align="right">4.12</td>
+</tr>
+<tr>
+<td align="right">181</td>
+<td>Mahabad</td>
+<td align="right">83</td>
+<td>IR</td>
+<td>2021-04-17</td>
+<td align="right">48</td>
+<td align="right">36.7631</td>
+<td align="right">45.7222</td>
+<td align="right">12.36</td>
+<td align="right">1.99</td>
+</tr>
+<tr>
+<td align="right">182</td>
+<td>Plettenberg Bay</td>
+<td align="right">0</td>
+<td>ZA</td>
+<td>2021-04-17</td>
+<td align="right">38</td>
+<td align="right">-34.0527</td>
+<td align="right">23.3716</td>
+<td align="right">19.44</td>
+<td align="right">1.52</td>
+</tr>
+<tr>
+<td align="right">183</td>
+<td>Jutaí</td>
+<td align="right">87</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">96</td>
+<td align="right">-5.1833</td>
+<td align="right">-68.9</td>
+<td align="right">23.33</td>
+<td align="right">0.62</td>
+</tr>
+<tr>
+<td align="right">184</td>
+<td>Sitka</td>
+<td align="right">75</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">62</td>
+<td align="right">57.0531</td>
+<td align="right">-135.33</td>
+<td align="right">12.0</td>
+<td align="right">1.3</td>
+</tr>
+<tr>
+<td align="right">185</td>
+<td>Luleå</td>
+<td align="right">83</td>
+<td>SE</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">65.5842</td>
+<td align="right">22.1547</td>
+<td align="right">-2.0</td>
+<td align="right">0.51</td>
+</tr>
+<tr>
+<td align="right">186</td>
+<td>Wanaka</td>
+<td align="right">100</td>
+<td>NZ</td>
+<td>2021-04-17</td>
+<td align="right">81</td>
+<td align="right">-44.7</td>
+<td align="right">169.15</td>
+<td align="right">10.73</td>
+<td align="right">3.59</td>
+</tr>
+<tr>
+<td align="right">187</td>
+<td>Bilibino</td>
+<td align="right">3</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">70</td>
+<td align="right">68.0546</td>
+<td align="right">166.4372</td>
+<td align="right">-4.36</td>
+<td align="right">2.68</td>
+</tr>
+<tr>
+<td align="right">188</td>
+<td>Chiapilla</td>
+<td align="right">75</td>
+<td>MX</td>
+<td>2021-04-17</td>
+<td align="right">35</td>
+<td align="right">16.5167</td>
+<td align="right">-92.7333</td>
+<td align="right">33.0</td>
+<td align="right">6.17</td>
+</tr>
+<tr>
+<td align="right">189</td>
+<td>Grindavik</td>
+<td align="right">75</td>
+<td>IS</td>
+<td>2021-04-17</td>
+<td align="right">60</td>
+<td align="right">63.8424</td>
+<td align="right">-22.4338</td>
+<td align="right">3.0</td>
+<td align="right">6.69</td>
+</tr>
+<tr>
+<td align="right">190</td>
+<td>Tapes</td>
+<td align="right">1</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">91</td>
+<td align="right">-30.6733</td>
+<td align="right">-51.3958</td>
+<td align="right">19.98</td>
+<td align="right">2.66</td>
+</tr>
+<tr>
+<td align="right">191</td>
+<td>Nyimba</td>
+<td align="right">13</td>
+<td>ZM</td>
+<td>2021-04-17</td>
+<td align="right">83</td>
+<td align="right">-14.5566</td>
+<td align="right">30.8149</td>
+<td align="right">15.95</td>
+<td align="right">2.74</td>
+</tr>
+<tr>
+<td align="right">192</td>
+<td>Northam</td>
+<td align="right">100</td>
+<td>GB</td>
+<td>2021-04-17</td>
+<td align="right">21</td>
+<td align="right">51.0333</td>
+<td align="right">-4.2167</td>
+<td align="right">3.89</td>
+<td align="right">0.45</td>
+</tr>
+<tr>
+<td align="right">193</td>
+<td>Yulara</td>
+<td align="right">0</td>
+<td>AU</td>
+<td>2021-04-17</td>
+<td align="right">34</td>
+<td align="right">-25.2406</td>
+<td align="right">130.9889</td>
+<td align="right">19.0</td>
+<td align="right">7.2</td>
+</tr>
+<tr>
+<td align="right">194</td>
+<td>Juneau</td>
+<td align="right">40</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">28</td>
+<td align="right">58.3019</td>
+<td align="right">-134.4197</td>
+<td align="right">21.0</td>
+<td align="right">4.12</td>
+</tr>
+<tr>
+<td align="right">195</td>
+<td>Kruisfontein</td>
+<td align="right">0</td>
+<td>ZA</td>
+<td>2021-04-17</td>
+<td align="right">27</td>
+<td align="right">-34.0033</td>
+<td align="right">24.7314</td>
+<td align="right">17.11</td>
+<td align="right">2.68</td>
+</tr>
+<tr>
+<td align="right">196</td>
+<td>Ushtobe</td>
+<td align="right">100</td>
+<td>KZ</td>
+<td>2021-04-17</td>
+<td align="right">51</td>
+<td align="right">45.2514</td>
+<td align="right">77.9838</td>
+<td align="right">13.09</td>
+<td align="right">1.49</td>
+</tr>
+<tr>
+<td align="right">197</td>
+<td>Kiryat Gat</td>
+<td align="right">8</td>
+<td>IL</td>
+<td>2021-04-17</td>
+<td align="right">83</td>
+<td align="right">31.61</td>
+<td align="right">34.7642</td>
+<td align="right">20.0</td>
+<td align="right">1.6</td>
+</tr>
+<tr>
+<td align="right">198</td>
+<td>Litovko</td>
+<td align="right">92</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">74</td>
+<td align="right">49.2361</td>
+<td align="right">135.1742</td>
+<td align="right">6.82</td>
+<td align="right">1.88</td>
+</tr>
+<tr>
+<td align="right">199</td>
+<td>Senanga</td>
+<td align="right">8</td>
+<td>ZM</td>
+<td>2021-04-17</td>
+<td align="right">54</td>
+<td align="right">-16.1167</td>
+<td align="right">23.2667</td>
+<td align="right">16.7</td>
+<td align="right">3.94</td>
+</tr>
+<tr>
+<td align="right">200</td>
+<td>Margate</td>
+<td align="right">90</td>
+<td>GB</td>
+<td>2021-04-17</td>
+<td align="right">74</td>
+<td align="right">51.3813</td>
+<td align="right">1.3862</td>
+<td align="right">5.0</td>
+<td align="right">4.59</td>
+</tr>
+<tr>
+<td align="right">201</td>
+<td>Salta</td>
+<td align="right">75</td>
+<td>AR</td>
+<td>2021-04-17</td>
+<td align="right">94</td>
+<td align="right">-24.7859</td>
+<td align="right">-65.4117</td>
+<td align="right">18.89</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">202</td>
+<td>Tessalit</td>
+<td align="right">100</td>
+<td>ML</td>
+<td>2021-04-17</td>
+<td align="right">20</td>
+<td align="right">20.1986</td>
+<td align="right">1.0114</td>
+<td align="right">29.24</td>
+<td align="right">2.86</td>
+</tr>
+<tr>
+<td align="right">203</td>
+<td>Denpasar</td>
+<td align="right">20</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">83</td>
+<td align="right">-8.65</td>
+<td align="right">115.2167</td>
+<td align="right">28.0</td>
+<td align="right">1.03</td>
+</tr>
+<tr>
+<td align="right">204</td>
+<td>Gujan-Mestras</td>
+<td align="right">0</td>
+<td>FR</td>
+<td>2021-04-17</td>
+<td align="right">81</td>
+<td align="right">44.6333</td>
+<td align="right">-1.0667</td>
+<td align="right">10.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">205</td>
+<td>Mahibadhoo</td>
+<td align="right">28</td>
+<td>MV</td>
+<td>2021-04-17</td>
+<td align="right">71</td>
+<td align="right">3.7833</td>
+<td align="right">72.9667</td>
+<td align="right">28.52</td>
+<td align="right">4.9</td>
+</tr>
+<tr>
+<td align="right">206</td>
+<td>Potrero Grande</td>
+<td align="right">75</td>
+<td>PA</td>
+<td>2021-04-17</td>
+<td align="right">100</td>
+<td align="right">8.8844</td>
+<td align="right">-79.8294</td>
+<td align="right">26.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">207</td>
+<td>Bathsheba</td>
+<td align="right">40</td>
+<td>BB</td>
+<td>2021-04-17</td>
+<td align="right">65</td>
+<td align="right">13.2167</td>
+<td align="right">-59.5167</td>
+<td align="right">26.0</td>
+<td align="right">8.75</td>
+</tr>
+<tr>
+<td align="right">208</td>
+<td>Saint Paul Harbor</td>
+<td align="right">90</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">81</td>
+<td align="right">57.79</td>
+<td align="right">-152.4072</td>
+<td align="right">6.0</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">209</td>
+<td>Hong Kong</td>
+<td align="right">55</td>
+<td>HK</td>
+<td>2021-04-17</td>
+<td align="right">55</td>
+<td align="right">22.2855</td>
+<td align="right">114.1577</td>
+<td align="right">25.0</td>
+<td align="right">0.89</td>
+</tr>
+<tr>
+<td align="right">210</td>
+<td>Ribeira Grande</td>
+<td align="right">24</td>
+<td>PT</td>
+<td>2021-04-17</td>
+<td align="right">90</td>
+<td align="right">38.5167</td>
+<td align="right">-28.7</td>
+<td align="right">16.71</td>
+<td align="right">5.87</td>
+</tr>
+<tr>
+<td align="right">211</td>
+<td>Felanitx</td>
+<td align="right">20</td>
+<td>ES</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">39.4696</td>
+<td align="right">3.1483</td>
+<td align="right">7.22</td>
+<td align="right">0.51</td>
+</tr>
+<tr>
+<td align="right">212</td>
+<td>Hasaki</td>
+<td align="right">20</td>
+<td>JP</td>
+<td>2021-04-17</td>
+<td align="right">34</td>
+<td align="right">35.7333</td>
+<td align="right">140.8333</td>
+<td align="right">20.0</td>
+<td align="right">8.23</td>
+</tr>
+<tr>
+<td align="right">213</td>
+<td>Lensk</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">73</td>
+<td align="right">60.7253</td>
+<td align="right">114.9278</td>
+<td align="right">-9.62</td>
+<td align="right">6.21</td>
+</tr>
+<tr>
+<td align="right">214</td>
+<td>Rocha</td>
+<td align="right">85</td>
+<td>UY</td>
+<td>2021-04-17</td>
+<td align="right">94</td>
+<td align="right">-34.4833</td>
+<td align="right">-54.3333</td>
+<td align="right">14.97</td>
+<td align="right">1.59</td>
+</tr>
+<tr>
+<td align="right">215</td>
+<td>Cananea</td>
+<td align="right">0</td>
+<td>MX</td>
+<td>2021-04-17</td>
+<td align="right">11</td>
+<td align="right">30.95</td>
+<td align="right">-110.3</td>
+<td align="right">22.22</td>
+<td align="right">0.45</td>
+</tr>
+<tr>
+<td align="right">216</td>
+<td>Kommunisticheskiy</td>
+<td align="right">94</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">82</td>
+<td align="right">61.6789</td>
+<td align="right">64.4819</td>
+<td align="right">-10.36</td>
+<td align="right">5.01</td>
+</tr>
+<tr>
+<td align="right">217</td>
+<td>Los Llanos de Aridane</td>
+<td align="right">75</td>
+<td>ES</td>
+<td>2021-04-17</td>
+<td align="right">73</td>
+<td align="right">28.6585</td>
+<td align="right">-17.9182</td>
+<td align="right">20.0</td>
+<td align="right">6.69</td>
+</tr>
+<tr>
+<td align="right">218</td>
+<td>Matara</td>
+<td align="right">100</td>
+<td>LK</td>
+<td>2021-04-17</td>
+<td align="right">88</td>
+<td align="right">5.9485</td>
+<td align="right">80.5353</td>
+<td align="right">25.15</td>
+<td align="right">1.99</td>
+</tr>
+<tr>
+<td align="right">219</td>
+<td>Arraial do Cabo</td>
+<td align="right">40</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">83</td>
+<td align="right">-22.9661</td>
+<td align="right">-42.0278</td>
+<td align="right">24.0</td>
+<td align="right">5.14</td>
+</tr>
+<tr>
+<td align="right">220</td>
+<td>Kaseda-shirakame</td>
+<td align="right">40</td>
+<td>JP</td>
+<td>2021-04-17</td>
+<td align="right">47</td>
+<td align="right">31.4167</td>
+<td align="right">130.3167</td>
+<td align="right">14.0</td>
+<td align="right">8.75</td>
+</tr>
+<tr>
+<td align="right">221</td>
+<td>Iskateley</td>
+<td align="right">72</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">67.6803</td>
+<td align="right">53.1512</td>
+<td align="right">-12.46</td>
+<td align="right">2.74</td>
+</tr>
+<tr>
+<td align="right">222</td>
+<td>Dhidhdhoo</td>
+<td align="right">100</td>
+<td>MV</td>
+<td>2021-04-17</td>
+<td align="right">71</td>
+<td align="right">6.8833</td>
+<td align="right">73.1</td>
+<td align="right">28.9</td>
+<td align="right">3.0</td>
+</tr>
+<tr>
+<td align="right">223</td>
+<td>Turukhansk</td>
+<td align="right">88</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">83</td>
+<td align="right">65.8167</td>
+<td align="right">87.9833</td>
+<td align="right">-15.89</td>
+<td align="right">3.56</td>
+</tr>
+<tr>
+<td align="right">224</td>
+<td>Nuuk</td>
+<td align="right">20</td>
+<td>GL</td>
+<td>2021-04-17</td>
+<td align="right">52</td>
+<td align="right">64.1835</td>
+<td align="right">-51.7216</td>
+<td align="right">-10.0</td>
+<td align="right">5.66</td>
+</tr>
+<tr>
+<td align="right">225</td>
+<td>Hofn</td>
+<td align="right">100</td>
+<td>IS</td>
+<td>2021-04-17</td>
+<td align="right">99</td>
+<td align="right">64.2539</td>
+<td align="right">-15.2082</td>
+<td align="right">7.47</td>
+<td align="right">6.49</td>
+</tr>
+<tr>
+<td align="right">226</td>
+<td>Dikson</td>
+<td align="right">35</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">99</td>
+<td align="right">73.5069</td>
+<td align="right">80.5464</td>
+<td align="right">-25.29</td>
+<td align="right">1.19</td>
+</tr>
+<tr>
+<td align="right">227</td>
+<td>Chui</td>
+<td align="right">56</td>
+<td>UY</td>
+<td>2021-04-17</td>
+<td align="right">90</td>
+<td align="right">-33.6971</td>
+<td align="right">-53.4616</td>
+<td align="right">17.74</td>
+<td align="right">2.55</td>
+</tr>
+<tr>
+<td align="right">228</td>
+<td>Vila Franca do Campo</td>
+<td align="right">75</td>
+<td>PT</td>
+<td>2021-04-17</td>
+<td align="right">100</td>
+<td align="right">37.7167</td>
+<td align="right">-25.4333</td>
+<td align="right">17.0</td>
+<td align="right">3.6</td>
+</tr>
+<tr>
+<td align="right">229</td>
+<td>Rønne</td>
+<td align="right">1</td>
+<td>DK</td>
+<td>2021-04-17</td>
+<td align="right">81</td>
+<td align="right">55.1009</td>
+<td align="right">14.7066</td>
+<td align="right">5.0</td>
+<td align="right">3.6</td>
+</tr>
+<tr>
+<td align="right">230</td>
+<td>Bethel</td>
+<td align="right">100</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">69</td>
+<td align="right">41.3712</td>
+<td align="right">-73.414</td>
+<td align="right">8.89</td>
+<td align="right">1.24</td>
+</tr>
+<tr>
+<td align="right">231</td>
+<td>Kavieng</td>
+<td align="right">81</td>
+<td>PG</td>
+<td>2021-04-17</td>
+<td align="right">73</td>
+<td align="right">-2.5744</td>
+<td align="right">150.7967</td>
+<td align="right">28.63</td>
+<td align="right">4.46</td>
+</tr>
+<tr>
+<td align="right">232</td>
+<td>Kostomuksha</td>
+<td align="right">13</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">97</td>
+<td align="right">64.571</td>
+<td align="right">30.5767</td>
+<td align="right">-2.59</td>
+<td align="right">0.46</td>
+</tr>
+<tr>
+<td align="right">233</td>
+<td>Bokhan</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">55</td>
+<td align="right">53.153</td>
+<td align="right">103.7714</td>
+<td align="right">-2.3</td>
+<td align="right">4.72</td>
+</tr>
+<tr>
+<td align="right">234</td>
+<td>Westerly</td>
+<td align="right">90</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">87</td>
+<td align="right">41.3776</td>
+<td align="right">-71.8273</td>
+<td align="right">9.0</td>
+<td align="right">1.12</td>
+</tr>
+<tr>
+<td align="right">235</td>
+<td>Orahovac</td>
+<td align="right">75</td>
+<td>XK</td>
+<td>2021-04-17</td>
+<td align="right">81</td>
+<td align="right">42.3994</td>
+<td align="right">20.6547</td>
+<td align="right">3.0</td>
+<td align="right">3.09</td>
+</tr>
+<tr>
+<td align="right">236</td>
+<td>San Jose</td>
+<td align="right">1</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">43</td>
+<td align="right">37.3394</td>
+<td align="right">-121.895</td>
+<td align="right">22.78</td>
+<td align="right">6.17</td>
+</tr>
+<tr>
+<td align="right">237</td>
+<td>Pinos</td>
+<td align="right">20</td>
+<td>MX</td>
+<td>2021-04-17</td>
+<td align="right">7</td>
+<td align="right">22.3</td>
+<td align="right">-101.5667</td>
+<td align="right">31.0</td>
+<td align="right">3.6</td>
+</tr>
+<tr>
+<td align="right">238</td>
+<td>Kaya</td>
+<td align="right">92</td>
+<td>BF</td>
+<td>2021-04-17</td>
+<td align="right">40</td>
+<td align="right">13.0917</td>
+<td align="right">-1.0844</td>
+<td align="right">29.99</td>
+<td align="right">4.44</td>
+</tr>
+<tr>
+<td align="right">239</td>
+<td>Acapulco de Juárez</td>
+<td align="right">40</td>
+<td>MX</td>
+<td>2021-04-17</td>
+<td align="right">69</td>
+<td align="right">16.8634</td>
+<td align="right">-99.8901</td>
+<td align="right">28.0</td>
+<td align="right">4.57</td>
+</tr>
+<tr>
+<td align="right">240</td>
+<td>Erenhot</td>
+<td align="right">0</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">18</td>
+<td align="right">43.6475</td>
+<td align="right">111.9767</td>
+<td align="right">10.85</td>
+<td align="right">8.7</td>
+</tr>
+<tr>
+<td align="right">241</td>
+<td>Phalaborwa</td>
+<td align="right">0</td>
+<td>ZA</td>
+<td>2021-04-17</td>
+<td align="right">82</td>
+<td align="right">-23.943</td>
+<td align="right">31.1411</td>
+<td align="right">15.0</td>
+<td align="right">1.03</td>
+</tr>
+<tr>
+<td align="right">242</td>
+<td>Hobyo</td>
+<td align="right">12</td>
+<td>SO</td>
+<td>2021-04-17</td>
+<td align="right">70</td>
+<td align="right">5.3505</td>
+<td align="right">48.5268</td>
+<td align="right">28.26</td>
+<td align="right">4.64</td>
+</tr>
+<tr>
+<td align="right">243</td>
+<td>Reriutaba</td>
+<td align="right">49</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">90</td>
+<td align="right">-4.1417</td>
+<td align="right">-40.5822</td>
+<td align="right">22.92</td>
+<td align="right">0.77</td>
+</tr>
+<tr>
+<td align="right">244</td>
+<td>Upernavik</td>
+<td align="right">100</td>
+<td>GL</td>
+<td>2021-04-17</td>
+<td align="right">88</td>
+<td align="right">72.7868</td>
+<td align="right">-56.1549</td>
+<td align="right">-15.46</td>
+<td align="right">3.63</td>
+</tr>
+<tr>
+<td align="right">245</td>
+<td>Tiarei</td>
+<td align="right">20</td>
+<td>PF</td>
+<td>2021-04-17</td>
+<td align="right">66</td>
+<td align="right">-17.5333</td>
+<td align="right">-149.3333</td>
+<td align="right">31.0</td>
+<td align="right">5.14</td>
+</tr>
+<tr>
+<td align="right">246</td>
+<td>Lázaro Cárdenas</td>
+<td align="right">0</td>
+<td>MX</td>
+<td>2021-04-17</td>
+<td align="right">62</td>
+<td align="right">17.9583</td>
+<td align="right">-102.2</td>
+<td align="right">25.73</td>
+<td align="right">4.02</td>
+</tr>
+<tr>
+<td align="right">247</td>
+<td>Shenjiamen</td>
+<td align="right">89</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">46</td>
+<td align="right">29.9576</td>
+<td align="right">122.298</td>
+<td align="right">13.52</td>
+<td align="right">0.83</td>
+</tr>
+<tr>
+<td align="right">248</td>
+<td>Iqaluit</td>
+<td align="right">40</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">79</td>
+<td align="right">63.7506</td>
+<td align="right">-68.5145</td>
+<td align="right">-10.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">249</td>
+<td>Rafrāf</td>
+<td align="right">20</td>
+<td>TN</td>
+<td>2021-04-17</td>
+<td align="right">87</td>
+<td align="right">37.1904</td>
+<td align="right">10.1837</td>
+<td align="right">10.0</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">250</td>
+<td>Čitluk</td>
+<td align="right">75</td>
+<td>BA</td>
+<td>2021-04-17</td>
+<td align="right">100</td>
+<td align="right">43.2286</td>
+<td align="right">17.7008</td>
+<td align="right">7.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">251</td>
+<td>Shatrovo</td>
+<td align="right">26</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">77</td>
+<td align="right">56.5167</td>
+<td align="right">64.6333</td>
+<td align="right">2.59</td>
+<td align="right">4.79</td>
+</tr>
+<tr>
+<td align="right">252</td>
+<td>Bako</td>
+<td align="right">100</td>
+<td>ET</td>
+<td>2021-04-17</td>
+<td align="right">80</td>
+<td align="right">5.7833</td>
+<td align="right">36.5667</td>
+<td align="right">18.09</td>
+<td align="right">1.94</td>
+</tr>
+<tr>
+<td align="right">253</td>
+<td>Broome</td>
+<td align="right">90</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">75</td>
+<td align="right">42.2506</td>
+<td align="right">-75.833</td>
+<td align="right">7.22</td>
+<td align="right">3.6</td>
+</tr>
+<tr>
+<td align="right">254</td>
+<td>Cayenne</td>
+<td align="right">75</td>
+<td>GF</td>
+<td>2021-04-17</td>
+<td align="right">74</td>
+<td align="right">4.9333</td>
+<td align="right">-52.3333</td>
+<td align="right">27.22</td>
+<td align="right">4.12</td>
+</tr>
+<tr>
+<td align="right">255</td>
+<td>São Filipe</td>
+<td align="right">0</td>
+<td>CV</td>
+<td>2021-04-17</td>
+<td align="right">73</td>
+<td align="right">14.8961</td>
+<td align="right">-24.4956</td>
+<td align="right">22.04</td>
+<td align="right">4.4</td>
+</tr>
+<tr>
+<td align="right">256</td>
+<td>Marzuq</td>
+<td align="right">0</td>
+<td>YE</td>
+<td>2021-04-17</td>
+<td align="right">40</td>
+<td align="right">14.4</td>
+<td align="right">46.4667</td>
+<td align="right">19.26</td>
+<td align="right">1.51</td>
+</tr>
+<tr>
+<td align="right">257</td>
+<td>Robertsport</td>
+<td align="right">100</td>
+<td>LR</td>
+<td>2021-04-17</td>
+<td align="right">74</td>
+<td align="right">6.7533</td>
+<td align="right">-11.3686</td>
+<td align="right">25.82</td>
+<td align="right">0.72</td>
+</tr>
+<tr>
+<td align="right">258</td>
+<td>Barrow</td>
+<td align="right">1</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">74</td>
+<td align="right">71.2906</td>
+<td align="right">-156.7887</td>
+<td align="right">0.0</td>
+<td align="right">6.17</td>
+</tr>
+<tr>
+<td align="right">259</td>
+<td>Ocós</td>
+<td align="right">75</td>
+<td>GT</td>
+<td>2021-04-17</td>
+<td align="right">70</td>
+<td align="right">14.5094</td>
+<td align="right">-92.1933</td>
+<td align="right">30.0</td>
+<td align="right">3.6</td>
+</tr>
+<tr>
+<td align="right">260</td>
+<td>Taos</td>
+<td align="right">90</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">36.4072</td>
+<td align="right">-105.5731</td>
+<td align="right">-0.56</td>
+<td align="right">4.12</td>
+</tr>
+<tr>
+<td align="right">261</td>
+<td>Harper</td>
+<td align="right">97</td>
+<td>LR</td>
+<td>2021-04-17</td>
+<td align="right">86</td>
+<td align="right">4.375</td>
+<td align="right">-7.7169</td>
+<td align="right">25.28</td>
+<td align="right">2.46</td>
+</tr>
+<tr>
+<td align="right">262</td>
+<td>Egvekinot</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">99</td>
+<td align="right">66.3167</td>
+<td align="right">-179.1667</td>
+<td align="right">-2.21</td>
+<td align="right">5.57</td>
+</tr>
+<tr>
+<td align="right">263</td>
+<td>Pisco</td>
+<td align="right">0</td>
+<td>PE</td>
+<td>2021-04-17</td>
+<td align="right">88</td>
+<td align="right">-13.7</td>
+<td align="right">-76.2167</td>
+<td align="right">19.44</td>
+<td align="right">8.23</td>
+</tr>
+<tr>
+<td align="right">264</td>
+<td>Bairiki Village</td>
+<td align="right">75</td>
+<td>KI</td>
+<td>2021-04-17</td>
+<td align="right">70</td>
+<td align="right">1.3292</td>
+<td align="right">172.9752</td>
+<td align="right">31.0</td>
+<td align="right">5.14</td>
+</tr>
+<tr>
+<td align="right">265</td>
+<td>Adrasmon</td>
+<td align="right">90</td>
+<td>TJ</td>
+<td>2021-04-17</td>
+<td align="right">39</td>
+<td align="right">40.6472</td>
+<td align="right">69.9856</td>
+<td align="right">17.0</td>
+<td align="right">10.0</td>
+</tr>
+<tr>
+<td align="right">266</td>
+<td>Santana do Livramento</td>
+<td align="right">75</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">86</td>
+<td align="right">-30.8908</td>
+<td align="right">-55.5328</td>
+<td align="right">17.38</td>
+<td align="right">3.48</td>
+</tr>
+<tr>
+<td align="right">267</td>
+<td>Lata</td>
+<td align="right">100</td>
+<td>PT</td>
+<td>2021-04-17</td>
+<td align="right">82</td>
+<td align="right">40.1629</td>
+<td align="right">-8.3327</td>
+<td align="right">10.56</td>
+<td align="right">0.89</td>
+</tr>
+<tr>
+<td align="right">268</td>
+<td>Malakal</td>
+<td align="right">66</td>
+<td>SS</td>
+<td>2021-04-17</td>
+<td align="right">14</td>
+<td align="right">9.5334</td>
+<td align="right">31.6605</td>
+<td align="right">29.35</td>
+<td align="right">1.53</td>
+</tr>
+<tr>
+<td align="right">269</td>
+<td>Port Blair</td>
+<td align="right">13</td>
+<td>IN</td>
+<td>2021-04-17</td>
+<td align="right">73</td>
+<td align="right">11.6667</td>
+<td align="right">92.75</td>
+<td align="right">28.04</td>
+<td align="right">2.49</td>
+</tr>
+<tr>
+<td align="right">270</td>
+<td>Tongchuanshi</td>
+<td align="right">95</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">23</td>
+<td align="right">35.0806</td>
+<td align="right">109.0897</td>
+<td align="right">14.65</td>
+<td align="right">1.97</td>
+</tr>
+<tr>
+<td align="right">271</td>
+<td>Lunca Banului</td>
+<td align="right">0</td>
+<td>RO</td>
+<td>2021-04-17</td>
+<td align="right">71</td>
+<td align="right">46.595</td>
+<td align="right">28.1683</td>
+<td align="right">9.0</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">272</td>
+<td>Naze</td>
+<td align="right">40</td>
+<td>JP</td>
+<td>2021-04-17</td>
+<td align="right">48</td>
+<td align="right">28.3667</td>
+<td align="right">129.4833</td>
+<td align="right">19.0</td>
+<td align="right">6.69</td>
+</tr>
+<tr>
+<td align="right">273</td>
+<td>Coquimbo</td>
+<td align="right">75</td>
+<td>CL</td>
+<td>2021-04-17</td>
+<td align="right">82</td>
+<td align="right">-29.9533</td>
+<td align="right">-71.3436</td>
+<td align="right">15.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">274</td>
+<td>Miracema do Tocantins</td>
+<td align="right">100</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">81</td>
+<td align="right">-9.5618</td>
+<td align="right">-48.3967</td>
+<td align="right">24.37</td>
+<td align="right">0.46</td>
+</tr>
+<tr>
+<td align="right">275</td>
+<td>Sokolo</td>
+<td align="right">8</td>
+<td>ML</td>
+<td>2021-04-17</td>
+<td align="right">19</td>
+<td align="right">14.7328</td>
+<td align="right">-6.1219</td>
+<td align="right">30.59</td>
+<td align="right">2.43</td>
+</tr>
+<tr>
+<td align="right">276</td>
+<td>Meulaboh</td>
+<td align="right">87</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">83</td>
+<td align="right">4.1363</td>
+<td align="right">96.1285</td>
+<td align="right">25.98</td>
+<td align="right">1.71</td>
+</tr>
+<tr>
+<td align="right">277</td>
+<td>Cuamba</td>
+<td align="right">66</td>
+<td>MZ</td>
+<td>2021-04-17</td>
+<td align="right">86</td>
+<td align="right">-14.8031</td>
+<td align="right">36.5372</td>
+<td align="right">17.77</td>
+<td align="right">3.69</td>
+</tr>
+<tr>
+<td align="right">278</td>
+<td>Samālkha</td>
+<td align="right">0</td>
+<td>IN</td>
+<td>2021-04-17</td>
+<td align="right">47</td>
+<td align="right">29.2333</td>
+<td align="right">77.0167</td>
+<td align="right">21.81</td>
+<td align="right">1.61</td>
+</tr>
+<tr>
+<td align="right">279</td>
+<td>Waingapu</td>
+<td align="right">99</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">72</td>
+<td align="right">-9.6567</td>
+<td align="right">120.2641</td>
+<td align="right">28.01</td>
+<td align="right">3.66</td>
+</tr>
+<tr>
+<td align="right">280</td>
+<td>Muros</td>
+<td align="right">100</td>
+<td>ES</td>
+<td>2021-04-17</td>
+<td align="right">76</td>
+<td align="right">42.7762</td>
+<td align="right">-9.0603</td>
+<td align="right">10.0</td>
+<td align="right">2.78</td>
+</tr>
+<tr>
+<td align="right">281</td>
+<td>São Félix do Xingu</td>
+<td align="right">95</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">97</td>
+<td align="right">-6.6447</td>
+<td align="right">-51.995</td>
+<td align="right">21.94</td>
+<td align="right">0.38</td>
+</tr>
+<tr>
+<td align="right">282</td>
+<td>Jackson</td>
+<td align="right">1</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">13</td>
+<td align="right">42.4165</td>
+<td align="right">-122.8345</td>
+<td align="right">27.22</td>
+<td align="right">2.57</td>
+</tr>
+<tr>
+<td align="right">283</td>
+<td>Atambua</td>
+<td align="right">74</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">65</td>
+<td align="right">-9.1061</td>
+<td align="right">124.8925</td>
+<td align="right">26.88</td>
+<td align="right">1.24</td>
+</tr>
+<tr>
+<td align="right">284</td>
+<td>Davila</td>
+<td align="right">75</td>
+<td>PH</td>
+<td>2021-04-17</td>
+<td align="right">58</td>
+<td align="right">18.4726</td>
+<td align="right">120.5763</td>
+<td align="right">30.0</td>
+<td align="right">5.14</td>
+</tr>
+<tr>
+<td align="right">285</td>
+<td>Decatur</td>
+<td align="right">90</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">41</td>
+<td align="right">39.8403</td>
+<td align="right">-88.9548</td>
+<td align="right">15.0</td>
+<td align="right">2.5</td>
+</tr>
+<tr>
+<td align="right">286</td>
+<td>Thinadhoo</td>
+<td align="right">63</td>
+<td>MV</td>
+<td>2021-04-17</td>
+<td align="right">61</td>
+<td align="right">0.5333</td>
+<td align="right">72.9333</td>
+<td align="right">27.97</td>
+<td align="right">2.1</td>
+</tr>
+<tr>
+<td align="right">287</td>
+<td>Konëvo</td>
+<td align="right">29</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">92</td>
+<td align="right">62.1215</td>
+<td align="right">39.3192</td>
+<td align="right">1.01</td>
+<td align="right">2.04</td>
+</tr>
+<tr>
+<td align="right">288</td>
+<td>Sinnamary</td>
+<td align="right">65</td>
+<td>GF</td>
+<td>2021-04-17</td>
+<td align="right">76</td>
+<td align="right">5.3833</td>
+<td align="right">-52.95</td>
+<td align="right">26.07</td>
+<td align="right">6.39</td>
+</tr>
+<tr>
+<td align="right">289</td>
+<td>Riviere-au-Renard</td>
+<td align="right">90</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">86</td>
+<td align="right">48.9957</td>
+<td align="right">-64.3971</td>
+<td align="right">1.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">290</td>
+<td>Katsuura</td>
+<td align="right">0</td>
+<td>JP</td>
+<td>2021-04-17</td>
+<td align="right">39</td>
+<td align="right">35.1333</td>
+<td align="right">140.3</td>
+<td align="right">18.89</td>
+<td align="right">6.26</td>
+</tr>
+<tr>
+<td align="right">291</td>
+<td>Gizo Government Station</td>
+<td align="right">100</td>
+<td>SB</td>
+<td>2021-04-17</td>
+<td align="right">73</td>
+<td align="right">-8.103</td>
+<td align="right">156.8419</td>
+<td align="right">28.97</td>
+<td align="right">1.97</td>
+</tr>
+<tr>
+<td align="right">292</td>
+<td>Souillac</td>
+<td align="right">75</td>
+<td>MU</td>
+<td>2021-04-17</td>
+<td align="right">94</td>
+<td align="right">-20.5167</td>
+<td align="right">57.5167</td>
+<td align="right">24.0</td>
+<td align="right">2.57</td>
+</tr>
+<tr>
+<td align="right">293</td>
+<td>Camaná</td>
+<td align="right">26</td>
+<td>PE</td>
+<td>2021-04-17</td>
+<td align="right">80</td>
+<td align="right">-16.6228</td>
+<td align="right">-72.7111</td>
+<td align="right">20.32</td>
+<td align="right">2.86</td>
+</tr>
+<tr>
+<td align="right">294</td>
+<td>Kirovskiy</td>
+<td align="right">17</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">53</td>
+<td align="right">45.0917</td>
+<td align="right">133.5136</td>
+<td align="right">9.93</td>
+<td align="right">4.93</td>
+</tr>
+<tr>
+<td align="right">295</td>
+<td>Moose Factory</td>
+<td align="right">20</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">86</td>
+<td align="right">51.2585</td>
+<td align="right">-80.6094</td>
+<td align="right">-1.0</td>
+<td align="right">2.57</td>
+</tr>
+<tr>
+<td align="right">296</td>
+<td>Punta de Bombón</td>
+<td align="right">64</td>
+<td>PE</td>
+<td>2021-04-17</td>
+<td align="right">78</td>
+<td align="right">-17.1717</td>
+<td align="right">-71.7931</td>
+<td align="right">19.9</td>
+<td align="right">2.01</td>
+</tr>
+<tr>
+<td align="right">297</td>
+<td>Yoshida-kasugachō</td>
+<td align="right">75</td>
+<td>JP</td>
+<td>2021-04-17</td>
+<td align="right">87</td>
+<td align="right">37.6833</td>
+<td align="right">138.8833</td>
+<td align="right">12.78</td>
+<td align="right">9.77</td>
+</tr>
+<tr>
+<td align="right">298</td>
+<td>Mount Isa</td>
+<td align="right">0</td>
+<td>AU</td>
+<td>2021-04-17</td>
+<td align="right">29</td>
+<td align="right">-20.7333</td>
+<td align="right">139.5</td>
+<td align="right">26.0</td>
+<td align="right">6.69</td>
+</tr>
+<tr>
+<td align="right">299</td>
+<td>Bykovo</td>
+<td align="right">0</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">36</td>
+<td align="right">55.6361</td>
+<td align="right">38.0803</td>
+<td align="right">8.89</td>
+<td align="right">4.0</td>
+</tr>
+<tr>
+<td align="right">300</td>
+<td>Álamos</td>
+<td align="right">0</td>
+<td>MX</td>
+<td>2021-04-17</td>
+<td align="right">35</td>
+<td align="right">27.0167</td>
+<td align="right">-108.9333</td>
+<td align="right">28.89</td>
+<td align="right">3.07</td>
+</tr>
+<tr>
+<td align="right">301</td>
+<td>Aswān</td>
+<td align="right">0</td>
+<td>EG</td>
+<td>2021-04-17</td>
+<td align="right">23</td>
+<td align="right">24.0934</td>
+<td align="right">32.907</td>
+<td align="right">24.33</td>
+<td align="right">3.37</td>
+</tr>
+<tr>
+<td align="right">302</td>
+<td>Knysna</td>
+<td align="right">0</td>
+<td>ZA</td>
+<td>2021-04-17</td>
+<td align="right">71</td>
+<td align="right">-34.0363</td>
+<td align="right">23.0471</td>
+<td align="right">13.0</td>
+<td align="right">1.03</td>
+</tr>
+<tr>
+<td align="right">303</td>
+<td>Disna</td>
+<td align="right">21</td>
+<td>BY</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">55.568</td>
+<td align="right">28.1971</td>
+<td align="right">6.9</td>
+<td align="right">4.02</td>
+</tr>
+<tr>
+<td align="right">304</td>
+<td>Korla</td>
+<td align="right">99</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">22</td>
+<td align="right">41.7597</td>
+<td align="right">86.1469</td>
+<td align="right">16.88</td>
+<td align="right">5.1</td>
+</tr>
+<tr>
+<td align="right">305</td>
+<td>Constitución</td>
+<td align="right">100</td>
+<td>CL</td>
+<td>2021-04-17</td>
+<td align="right">87</td>
+<td align="right">-35.3333</td>
+<td align="right">-72.4167</td>
+<td align="right">13.22</td>
+<td align="right">1.78</td>
+</tr>
+<tr>
+<td align="right">306</td>
+<td>Ketchikan</td>
+<td align="right">1</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">44</td>
+<td align="right">55.3422</td>
+<td align="right">-131.6461</td>
+<td align="right">16.0</td>
+<td align="right">3.09</td>
+</tr>
+<tr>
+<td align="right">307</td>
+<td>Gouré</td>
+<td align="right">97</td>
+<td>NE</td>
+<td>2021-04-17</td>
+<td align="right">7</td>
+<td align="right">13.9835</td>
+<td align="right">10.2704</td>
+<td align="right">28.17</td>
+<td align="right">2.74</td>
+</tr>
+<tr>
+<td align="right">308</td>
+<td>Tutóia</td>
+<td align="right">52</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">87</td>
+<td align="right">-2.7619</td>
+<td align="right">-42.2744</td>
+<td align="right">25.67</td>
+<td align="right">5.2</td>
+</tr>
+<tr>
+<td align="right">309</td>
+<td>Tambopata</td>
+<td align="right">100</td>
+<td>PE</td>
+<td>2021-04-17</td>
+<td align="right">97</td>
+<td align="right">-12.7333</td>
+<td align="right">-69.1833</td>
+<td align="right">22.85</td>
+<td align="right">0.36</td>
+</tr>
+<tr>
+<td align="right">310</td>
+<td>Arrondissement de Bergerac</td>
+<td align="right">0</td>
+<td>FR</td>
+<td>2021-04-17</td>
+<td align="right">87</td>
+<td align="right">44.8333</td>
+<td align="right">0.5</td>
+<td align="right">5.56</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">311</td>
+<td>Tiznit Province</td>
+<td align="right">6</td>
+<td>MA</td>
+<td>2021-04-17</td>
+<td align="right">67</td>
+<td align="right">29.5833</td>
+<td align="right">-9.5</td>
+<td align="right">16.07</td>
+<td align="right">1.2</td>
+</tr>
+<tr>
+<td align="right">312</td>
+<td>Laas</td>
+<td align="right">0</td>
+<td>IT</td>
+<td>2021-04-17</td>
+<td align="right">74</td>
+<td align="right">46.6166</td>
+<td align="right">10.7002</td>
+<td align="right">2.78</td>
+<td align="right">3.09</td>
+</tr>
+<tr>
+<td align="right">313</td>
+<td>Beringovskiy</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">98</td>
+<td align="right">63.05</td>
+<td align="right">179.3167</td>
+<td align="right">0.32</td>
+<td align="right">5.06</td>
+</tr>
+<tr>
+<td align="right">314</td>
+<td>Homer</td>
+<td align="right">1</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">40</td>
+<td align="right">59.6425</td>
+<td align="right">-151.5483</td>
+<td align="right">11.0</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">315</td>
+<td>Yellowknife</td>
+<td align="right">75</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">64</td>
+<td align="right">62.456</td>
+<td align="right">-114.3525</td>
+<td align="right">1.0</td>
+<td align="right">3.09</td>
+</tr>
+<tr>
+<td align="right">316</td>
+<td>Vostok</td>
+<td align="right">0</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">41</td>
+<td align="right">46.4856</td>
+<td align="right">135.8833</td>
+<td align="right">8.3</td>
+<td align="right">2.51</td>
+</tr>
+<tr>
+<td align="right">317</td>
+<td>Tacoaleche</td>
+<td align="right">40</td>
+<td>MX</td>
+<td>2021-04-17</td>
+<td align="right">3</td>
+<td align="right">22.8167</td>
+<td align="right">-102.4167</td>
+<td align="right">26.0</td>
+<td align="right">10.29</td>
+</tr>
+<tr>
+<td align="right">318</td>
+<td>Riyadh</td>
+<td align="right">100</td>
+<td>SA</td>
+<td>2021-04-17</td>
+<td align="right">22</td>
+<td align="right">24.6877</td>
+<td align="right">46.7219</td>
+<td align="right">24.0</td>
+<td align="right">3.09</td>
+</tr>
+<tr>
+<td align="right">319</td>
+<td>Solnechnyy</td>
+<td align="right">8</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">69</td>
+<td align="right">50.7214</td>
+<td align="right">136.6319</td>
+<td align="right">7.59</td>
+<td align="right">1.37</td>
+</tr>
+<tr>
+<td align="right">320</td>
+<td>Hirado</td>
+<td align="right">40</td>
+<td>JP</td>
+<td>2021-04-17</td>
+<td align="right">51</td>
+<td align="right">33.3597</td>
+<td align="right">129.5531</td>
+<td align="right">14.0</td>
+<td align="right">9.77</td>
+</tr>
+<tr>
+<td align="right">321</td>
+<td>Te Anau</td>
+<td align="right">84</td>
+<td>NZ</td>
+<td>2021-04-17</td>
+<td align="right">80</td>
+<td align="right">-45.4167</td>
+<td align="right">167.7167</td>
+<td align="right">13.27</td>
+<td align="right">2.96</td>
+</tr>
+<tr>
+<td align="right">322</td>
+<td>Carndonagh</td>
+<td align="right">100</td>
+<td>IE</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">55.25</td>
+<td align="right">-7.2667</td>
+<td align="right">6.34</td>
+<td align="right">4.93</td>
+</tr>
+<tr>
+<td align="right">323</td>
+<td>Mizhou</td>
+<td align="right">0</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">23</td>
+<td align="right">35.9947</td>
+<td align="right">119.3975</td>
+<td align="right">15.35</td>
+<td align="right">3.41</td>
+</tr>
+<tr>
+<td align="right">324</td>
+<td>Adrar</td>
+<td align="right">0</td>
+<td>MR</td>
+<td>2021-04-17</td>
+<td align="right">21</td>
+<td align="right">20.5022</td>
+<td align="right">-10.0711</td>
+<td align="right">22.29</td>
+<td align="right">4.57</td>
+</tr>
+<tr>
+<td align="right">325</td>
+<td>Prince Rupert</td>
+<td align="right">1</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">34</td>
+<td align="right">54.3161</td>
+<td align="right">-130.3201</td>
+<td align="right">18.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">326</td>
+<td>Curup</td>
+<td align="right">79</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">90</td>
+<td align="right">-3.4667</td>
+<td align="right">102.5333</td>
+<td align="right">21.83</td>
+<td align="right">0.76</td>
+</tr>
+<tr>
+<td align="right">327</td>
+<td>Buarcos</td>
+<td align="right">0</td>
+<td>PT</td>
+<td>2021-04-17</td>
+<td align="right">87</td>
+<td align="right">40.166</td>
+<td align="right">-8.8768</td>
+<td align="right">11.67</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">328</td>
+<td>Rozhyshche</td>
+<td align="right">51</td>
+<td>UA</td>
+<td>2021-04-17</td>
+<td align="right">95</td>
+<td align="right">50.9154</td>
+<td align="right">25.2691</td>
+<td align="right">5.56</td>
+<td align="right">0.89</td>
+</tr>
+<tr>
+<td align="right">329</td>
+<td>Tabou</td>
+<td align="right">87</td>
+<td>CI</td>
+<td>2021-04-17</td>
+<td align="right">88</td>
+<td align="right">4.423</td>
+<td align="right">-7.3528</td>
+<td align="right">24.86</td>
+<td align="right">2.48</td>
+</tr>
+<tr>
+<td align="right">330</td>
+<td>Dingle</td>
+<td align="right">100</td>
+<td>PH</td>
+<td>2021-04-17</td>
+<td align="right">60</td>
+<td align="right">10.9995</td>
+<td align="right">122.6711</td>
+<td align="right">28.97</td>
+<td align="right">7.06</td>
+</tr>
+<tr>
+<td align="right">331</td>
+<td>San Rafael</td>
+<td align="right">43</td>
+<td>AR</td>
+<td>2021-04-17</td>
+<td align="right">61</td>
+<td align="right">-34.6177</td>
+<td align="right">-68.3301</td>
+<td align="right">20.56</td>
+<td align="right">0.62</td>
+</tr>
+<tr>
+<td align="right">332</td>
+<td>Oktyabr&#39;skiy</td>
+<td align="right">0</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">70</td>
+<td align="right">54.4815</td>
+<td align="right">53.471</td>
+<td align="right">3.7</td>
+<td align="right">2.38</td>
+</tr>
+<tr>
+<td align="right">333</td>
+<td>Jiangyou</td>
+<td align="right">100</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">91</td>
+<td align="right">31.7667</td>
+<td align="right">104.7167</td>
+<td align="right">14.6</td>
+<td align="right">0.84</td>
+</tr>
+<tr>
+<td align="right">334</td>
+<td>South Lake Tahoe</td>
+<td align="right">1</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">19</td>
+<td align="right">38.9332</td>
+<td align="right">-119.9844</td>
+<td align="right">16.0</td>
+<td align="right">6.17</td>
+</tr>
+<tr>
+<td align="right">335</td>
+<td>Vestmanna</td>
+<td align="right">100</td>
+<td>FO</td>
+<td>2021-04-17</td>
+<td align="right">87</td>
+<td align="right">62.1564</td>
+<td align="right">-7.1664</td>
+<td align="right">8.0</td>
+<td align="right">13.89</td>
+</tr>
+<tr>
+<td align="right">336</td>
+<td>Ayorou</td>
+<td align="right">100</td>
+<td>NE</td>
+<td>2021-04-17</td>
+<td align="right">29</td>
+<td align="right">14.7308</td>
+<td align="right">0.9174</td>
+<td align="right">32.87</td>
+<td align="right">2.67</td>
+</tr>
+<tr>
+<td align="right">337</td>
+<td>Tulsīpur</td>
+<td align="right">0</td>
+<td>NP</td>
+<td>2021-04-17</td>
+<td align="right">79</td>
+<td align="right">28.131</td>
+<td align="right">82.2973</td>
+<td align="right">25.56</td>
+<td align="right">0.89</td>
+</tr>
+<tr>
+<td align="right">338</td>
+<td>Balikpapan</td>
+<td align="right">100</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">87</td>
+<td align="right">-1.2675</td>
+<td align="right">116.8289</td>
+<td align="right">25.19</td>
+<td align="right">1.56</td>
+</tr>
+<tr>
+<td align="right">339</td>
+<td>Sittwe</td>
+<td align="right">0</td>
+<td>MM</td>
+<td>2021-04-17</td>
+<td align="right">63</td>
+<td align="right">20.15</td>
+<td align="right">92.9</td>
+<td align="right">26.22</td>
+<td align="right">2.08</td>
+</tr>
+<tr>
+<td align="right">340</td>
+<td>Oistins</td>
+<td align="right">40</td>
+<td>BB</td>
+<td>2021-04-17</td>
+<td align="right">65</td>
+<td align="right">13.0667</td>
+<td align="right">-59.5333</td>
+<td align="right">26.0</td>
+<td align="right">8.75</td>
+</tr>
+<tr>
+<td align="right">341</td>
+<td>Otane</td>
+<td align="right">6</td>
+<td>NZ</td>
+<td>2021-04-17</td>
+<td align="right">61</td>
+<td align="right">-39.8833</td>
+<td align="right">176.6333</td>
+<td align="right">18.33</td>
+<td align="right">2.24</td>
+</tr>
+<tr>
+<td align="right">342</td>
+<td>Nouadhibou</td>
+<td align="right">0</td>
+<td>MR</td>
+<td>2021-04-17</td>
+<td align="right">83</td>
+<td align="right">20.931</td>
+<td align="right">-17.0347</td>
+<td align="right">18.36</td>
+<td align="right">9.61</td>
+</tr>
+<tr>
+<td align="right">343</td>
+<td>Clyde River</td>
+<td align="right">90</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">85</td>
+<td align="right">70.4692</td>
+<td align="right">-68.5914</td>
+<td align="right">-14.0</td>
+<td align="right">5.66</td>
+</tr>
+<tr>
+<td align="right">344</td>
+<td>Jaguarari</td>
+<td align="right">96</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">77</td>
+<td align="right">-10.2639</td>
+<td align="right">-40.1958</td>
+<td align="right">20.46</td>
+<td align="right">2.12</td>
+</tr>
+<tr>
+<td align="right">345</td>
+<td>Kintinku</td>
+<td align="right">75</td>
+<td>TZ</td>
+<td>2021-04-17</td>
+<td align="right">88</td>
+<td align="right">-5.8833</td>
+<td align="right">35.2333</td>
+<td align="right">20.0</td>
+<td align="right">7.72</td>
+</tr>
+<tr>
+<td align="right">346</td>
+<td>Jaranwala</td>
+<td align="right">11</td>
+<td>PK</td>
+<td>2021-04-17</td>
+<td align="right">70</td>
+<td align="right">31.3333</td>
+<td align="right">73.4333</td>
+<td align="right">18.37</td>
+<td align="right">2.75</td>
+</tr>
+<tr>
+<td align="right">347</td>
+<td>Cavalcante</td>
+<td align="right">100</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">66</td>
+<td align="right">-13.7975</td>
+<td align="right">-47.4583</td>
+<td align="right">21.67</td>
+<td align="right">0.31</td>
+</tr>
+<tr>
+<td align="right">348</td>
+<td>Voronezhskaya</td>
+<td align="right">75</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">45.2106</td>
+<td align="right">39.5667</td>
+<td align="right">10.0</td>
+<td align="right">2.0</td>
+</tr>
+<tr>
+<td align="right">349</td>
+<td>Aklavik</td>
+<td align="right">100</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">42</td>
+<td align="right">68.2191</td>
+<td align="right">-135.0107</td>
+<td align="right">8.0</td>
+<td align="right">4.12</td>
+</tr>
+<tr>
+<td align="right">350</td>
+<td>Olinda</td>
+<td align="right">75</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">88</td>
+<td align="right">-8.0089</td>
+<td align="right">-34.8553</td>
+<td align="right">23.0</td>
+<td align="right">0.51</td>
+</tr>
+<tr>
+<td align="right">351</td>
+<td>Pevek</td>
+<td align="right">7</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">86</td>
+<td align="right">69.7008</td>
+<td align="right">170.3133</td>
+<td align="right">-3.34</td>
+<td align="right">7.67</td>
+</tr>
+<tr>
+<td align="right">352</td>
+<td>Avera</td>
+<td align="right">40</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">59</td>
+<td align="right">33.194</td>
+<td align="right">-82.5271</td>
+<td align="right">19.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">353</td>
+<td>Tianmen</td>
+<td align="right">100</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">62</td>
+<td align="right">30.6516</td>
+<td align="right">113.1603</td>
+<td align="right">15.23</td>
+<td align="right">1.5</td>
+</tr>
+<tr>
+<td align="right">354</td>
+<td>Kholodnyy</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">81</td>
+<td align="right">62.7167</td>
+<td align="right">147.95</td>
+<td align="right">-5.1</td>
+<td align="right">6.84</td>
+</tr>
+<tr>
+<td align="right">355</td>
+<td>Buraidah</td>
+<td align="right">0</td>
+<td>SA</td>
+<td>2021-04-17</td>
+<td align="right">52</td>
+<td align="right">26.326</td>
+<td align="right">43.975</td>
+<td align="right">20.0</td>
+<td align="right">3.09</td>
+</tr>
+<tr>
+<td align="right">356</td>
+<td>Port Shepstone</td>
+<td align="right">55</td>
+<td>ZA</td>
+<td>2021-04-17</td>
+<td align="right">81</td>
+<td align="right">-30.7414</td>
+<td align="right">30.455</td>
+<td align="right">16.33</td>
+<td align="right">5.36</td>
+</tr>
+<tr>
+<td align="right">357</td>
+<td>Kendari</td>
+<td align="right">100</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">72</td>
+<td align="right">-3.945</td>
+<td align="right">122.4989</td>
+<td align="right">28.27</td>
+<td align="right">1.55</td>
+</tr>
+<tr>
+<td align="right">358</td>
+<td>Hambantota</td>
+<td align="right">40</td>
+<td>LK</td>
+<td>2021-04-17</td>
+<td align="right">100</td>
+<td align="right">6.1241</td>
+<td align="right">81.1185</td>
+<td align="right">25.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">359</td>
+<td>Faanui</td>
+<td align="right">62</td>
+<td>PF</td>
+<td>2021-04-17</td>
+<td align="right">73</td>
+<td align="right">-16.4833</td>
+<td align="right">-151.75</td>
+<td align="right">27.81</td>
+<td align="right">3.48</td>
+</tr>
+<tr>
+<td align="right">360</td>
+<td>Tazovsky</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">96</td>
+<td align="right">67.4667</td>
+<td align="right">78.7</td>
+<td align="right">-18.25</td>
+<td align="right">3.93</td>
+</tr>
+<tr>
+<td align="right">361</td>
+<td>Norman Wells</td>
+<td align="right">20</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">37</td>
+<td align="right">65.282</td>
+<td align="right">-126.8329</td>
+<td align="right">10.0</td>
+<td align="right">3.09</td>
+</tr>
+<tr>
+<td align="right">362</td>
+<td>Macusani</td>
+<td align="right">49</td>
+<td>PE</td>
+<td>2021-04-17</td>
+<td align="right">90</td>
+<td align="right">-14.0833</td>
+<td align="right">-70.4333</td>
+<td align="right">1.17</td>
+<td align="right">1.65</td>
+</tr>
+<tr>
+<td align="right">363</td>
+<td>Praia da Vitória</td>
+<td align="right">20</td>
+<td>PT</td>
+<td>2021-04-17</td>
+<td align="right">88</td>
+<td align="right">38.7333</td>
+<td align="right">-27.0667</td>
+<td align="right">16.0</td>
+<td align="right">3.18</td>
+</tr>
+<tr>
+<td align="right">364</td>
+<td>Muisne</td>
+<td align="right">94</td>
+<td>EC</td>
+<td>2021-04-17</td>
+<td align="right">83</td>
+<td align="right">0.6</td>
+<td align="right">-80.0333</td>
+<td align="right">24.93</td>
+<td align="right">0.9</td>
+</tr>
+<tr>
+<td align="right">365</td>
+<td>Vestmannaeyjar</td>
+<td align="right">100</td>
+<td>IS</td>
+<td>2021-04-17</td>
+<td align="right">61</td>
+<td align="right">63.4427</td>
+<td align="right">-20.2734</td>
+<td align="right">4.47</td>
+<td align="right">9.47</td>
+</tr>
+<tr>
+<td align="right">366</td>
+<td>Bariloche</td>
+<td align="right">75</td>
+<td>AR</td>
+<td>2021-04-17</td>
+<td align="right">38</td>
+<td align="right">-41.1456</td>
+<td align="right">-71.3082</td>
+<td align="right">15.0</td>
+<td align="right">4.63</td>
+</tr>
+<tr>
+<td align="right">367</td>
+<td>Shache</td>
+<td align="right">100</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">41</td>
+<td align="right">38.4167</td>
+<td align="right">77.2406</td>
+<td align="right">14.57</td>
+<td align="right">2.2</td>
+</tr>
+<tr>
+<td align="right">368</td>
+<td>Santa Quitéria</td>
+<td align="right">90</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">88</td>
+<td align="right">-4.3319</td>
+<td align="right">-40.1567</td>
+<td align="right">22.52</td>
+<td align="right">1.04</td>
+</tr>
+<tr>
+<td align="right">369</td>
+<td>Nyurba</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">83</td>
+<td align="right">63.2842</td>
+<td align="right">118.3319</td>
+<td align="right">-9.93</td>
+<td align="right">5.44</td>
+</tr>
+<tr>
+<td align="right">370</td>
+<td>Makokou</td>
+<td align="right">100</td>
+<td>GA</td>
+<td>2021-04-17</td>
+<td align="right">96</td>
+<td align="right">0.5738</td>
+<td align="right">12.8642</td>
+<td align="right">20.58</td>
+<td align="right">1.01</td>
+</tr>
+<tr>
+<td align="right">371</td>
+<td>Haines Junction</td>
+<td align="right">10</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">23</td>
+<td align="right">60.7522</td>
+<td align="right">-137.5108</td>
+<td align="right">14.0</td>
+<td align="right">2.57</td>
+</tr>
+<tr>
+<td align="right">372</td>
+<td>Zhigansk</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">88</td>
+<td align="right">66.7697</td>
+<td align="right">123.3711</td>
+<td align="right">-9.37</td>
+<td align="right">5.76</td>
+</tr>
+<tr>
+<td align="right">373</td>
+<td>Stříbro</td>
+<td align="right">90</td>
+<td>CZ</td>
+<td>2021-04-17</td>
+<td align="right">96</td>
+<td align="right">49.7529</td>
+<td align="right">13.0041</td>
+<td align="right">3.33</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">374</td>
+<td>Bartlesville</td>
+<td align="right">90</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">66</td>
+<td align="right">36.7473</td>
+<td align="right">-95.9808</td>
+<td align="right">11.0</td>
+<td align="right">3.72</td>
+</tr>
+<tr>
+<td align="right">375</td>
+<td>Basco</td>
+<td align="right">100</td>
+<td>PH</td>
+<td>2021-04-17</td>
+<td align="right">69</td>
+<td align="right">20.4487</td>
+<td align="right">121.9702</td>
+<td align="right">24.57</td>
+<td align="right">15.34</td>
+</tr>
+<tr>
+<td align="right">376</td>
+<td>Dok Kham Tai</td>
+<td align="right">83</td>
+<td>TH</td>
+<td>2021-04-17</td>
+<td align="right">83</td>
+<td align="right">19.1624</td>
+<td align="right">99.9934</td>
+<td align="right">23.5</td>
+<td align="right">1.3</td>
+</tr>
+<tr>
+<td align="right">377</td>
+<td>Westport</td>
+<td align="right">90</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">50</td>
+<td align="right">41.1415</td>
+<td align="right">-73.3579</td>
+<td align="right">11.0</td>
+<td align="right">3.09</td>
+</tr>
+<tr>
+<td align="right">378</td>
+<td>Berja</td>
+<td align="right">75</td>
+<td>ES</td>
+<td>2021-04-17</td>
+<td align="right">82</td>
+<td align="right">36.8469</td>
+<td align="right">-2.9497</td>
+<td align="right">15.0</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">379</td>
+<td>Matagami</td>
+<td align="right">90</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">61</td>
+<td align="right">49.7502</td>
+<td align="right">-77.6328</td>
+<td align="right">7.0</td>
+<td align="right">3.09</td>
+</tr>
+<tr>
+<td align="right">380</td>
+<td>Lincoln</td>
+<td align="right">75</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">54</td>
+<td align="right">40.8</td>
+<td align="right">-96.667</td>
+<td align="right">11.0</td>
+<td align="right">6.69</td>
+</tr>
+<tr>
+<td align="right">381</td>
+<td>Sijunjung</td>
+<td align="right">100</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">90</td>
+<td align="right">-0.6876</td>
+<td align="right">100.9537</td>
+<td align="right">23.15</td>
+<td align="right">0.6</td>
+</tr>
+<tr>
+<td align="right">382</td>
+<td>Claremore</td>
+<td align="right">90</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">57</td>
+<td align="right">36.3126</td>
+<td align="right">-95.6161</td>
+<td align="right">10.56</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">383</td>
+<td>Yar-Sale</td>
+<td align="right">29</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">98</td>
+<td align="right">66.8333</td>
+<td align="right">70.8333</td>
+<td align="right">-21.7</td>
+<td align="right">4.39</td>
+</tr>
+<tr>
+<td align="right">384</td>
+<td>Nichinan</td>
+<td align="right">40</td>
+<td>JP</td>
+<td>2021-04-17</td>
+<td align="right">38</td>
+<td align="right">31.6</td>
+<td align="right">131.3667</td>
+<td align="right">14.0</td>
+<td align="right">7.72</td>
+</tr>
+<tr>
+<td align="right">385</td>
+<td>Beloha</td>
+<td align="right">67</td>
+<td>MG</td>
+<td>2021-04-17</td>
+<td align="right">59</td>
+<td align="right">-25.1667</td>
+<td align="right">45.05</td>
+<td align="right">16.74</td>
+<td align="right">2.93</td>
+</tr>
+<tr>
+<td align="right">386</td>
+<td>Itoman</td>
+<td align="right">75</td>
+<td>JP</td>
+<td>2021-04-17</td>
+<td align="right">52</td>
+<td align="right">26.1247</td>
+<td align="right">127.6694</td>
+<td align="right">20.0</td>
+<td align="right">11.32</td>
+</tr>
+<tr>
+<td align="right">387</td>
+<td>Brae</td>
+<td align="right">1</td>
+<td>GB</td>
+<td>2021-04-17</td>
+<td align="right">75</td>
+<td align="right">60.3964</td>
+<td align="right">-1.353</td>
+<td align="right">6.0</td>
+<td align="right">8.23</td>
+</tr>
+<tr>
+<td align="right">388</td>
+<td>São João da Barra</td>
+<td align="right">100</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">82</td>
+<td align="right">-21.6403</td>
+<td align="right">-41.0511</td>
+<td align="right">24.04</td>
+<td align="right">5.96</td>
+</tr>
+<tr>
+<td align="right">389</td>
+<td>Antofagasta</td>
+<td align="right">0</td>
+<td>CL</td>
+<td>2021-04-17</td>
+<td align="right">82</td>
+<td align="right">-23.65</td>
+<td align="right">-70.4</td>
+<td align="right">17.0</td>
+<td align="right">3.09</td>
+</tr>
+<tr>
+<td align="right">390</td>
+<td>Mutoko</td>
+<td align="right">100</td>
+<td>ZW</td>
+<td>2021-04-17</td>
+<td align="right">89</td>
+<td align="right">-17.397</td>
+<td align="right">32.2268</td>
+<td align="right">10.05</td>
+<td align="right">0.54</td>
+</tr>
+<tr>
+<td align="right">391</td>
+<td>Porbandar</td>
+<td align="right">2</td>
+<td>IN</td>
+<td>2021-04-17</td>
+<td align="right">85</td>
+<td align="right">21.6422</td>
+<td align="right">69.6093</td>
+<td align="right">25.56</td>
+<td align="right">3.08</td>
+</tr>
+<tr>
+<td align="right">392</td>
+<td>Jaciara</td>
+<td align="right">44</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">89</td>
+<td align="right">-15.9653</td>
+<td align="right">-54.9683</td>
+<td align="right">21.35</td>
+<td align="right">0.78</td>
+</tr>
+<tr>
+<td align="right">393</td>
+<td>San Bartolo Cuitareo</td>
+<td align="right">1</td>
+<td>MX</td>
+<td>2021-04-17</td>
+<td align="right">11</td>
+<td align="right">19.6167</td>
+<td align="right">-100.6</td>
+<td align="right">28.0</td>
+<td align="right">7.2</td>
+</tr>
+<tr>
+<td align="right">394</td>
+<td>Vaitape</td>
+<td align="right">68</td>
+<td>PF</td>
+<td>2021-04-17</td>
+<td align="right">73</td>
+<td align="right">-16.5167</td>
+<td align="right">-151.75</td>
+<td align="right">27.8</td>
+<td align="right">3.48</td>
+</tr>
+<tr>
+<td align="right">395</td>
+<td>Portland</td>
+<td align="right">1</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">15</td>
+<td align="right">45.5234</td>
+<td align="right">-122.6762</td>
+<td align="right">28.0</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">396</td>
+<td>Cockburn Town</td>
+<td align="right">0</td>
+<td>TC</td>
+<td>2021-04-17</td>
+<td align="right">86</td>
+<td align="right">21.4612</td>
+<td align="right">-71.1419</td>
+<td align="right">25.59</td>
+<td align="right">6.39</td>
+</tr>
+<tr>
+<td align="right">397</td>
+<td>Paraty</td>
+<td align="right">100</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">92</td>
+<td align="right">-23.2178</td>
+<td align="right">-44.7131</td>
+<td align="right">21.32</td>
+<td align="right">1.71</td>
+</tr>
+<tr>
+<td align="right">398</td>
+<td>Tolbazy</td>
+<td align="right">0</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">60</td>
+<td align="right">54.0241</td>
+<td align="right">55.8825</td>
+<td align="right">1.0</td>
+<td align="right">4.0</td>
+</tr>
+<tr>
+<td align="right">399</td>
+<td>Jaru</td>
+<td align="right">100</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">96</td>
+<td align="right">-10.4389</td>
+<td align="right">-62.4664</td>
+<td align="right">22.62</td>
+<td align="right">0.63</td>
+</tr>
+<tr>
+<td align="right">400</td>
+<td>Chumikan</td>
+<td align="right">33</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">80</td>
+<td align="right">54.7183</td>
+<td align="right">135.315</td>
+<td align="right">-0.33</td>
+<td align="right">0.83</td>
+</tr>
+<tr>
+<td align="right">401</td>
+<td>Padang</td>
+<td align="right">20</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">94</td>
+<td align="right">-0.9492</td>
+<td align="right">100.3543</td>
+<td align="right">24.0</td>
+<td align="right">0.51</td>
+</tr>
+<tr>
+<td align="right">402</td>
+<td>Sofiyivka</td>
+<td align="right">0</td>
+<td>UA</td>
+<td>2021-04-17</td>
+<td align="right">81</td>
+<td align="right">48.0493</td>
+<td align="right">33.8746</td>
+<td align="right">3.0</td>
+<td align="right">1.83</td>
+</tr>
+<tr>
+<td align="right">403</td>
+<td>Churapcha</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">69</td>
+<td align="right">62.0025</td>
+<td align="right">132.4325</td>
+<td align="right">-4.73</td>
+<td align="right">6.07</td>
+</tr>
+<tr>
+<td align="right">404</td>
+<td>Kenai</td>
+<td align="right">1</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">40</td>
+<td align="right">60.5544</td>
+<td align="right">-151.2583</td>
+<td align="right">12.0</td>
+<td align="right">5.14</td>
+</tr>
+<tr>
+<td align="right">405</td>
+<td>Bloomington</td>
+<td align="right">75</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">33</td>
+<td align="right">44.8408</td>
+<td align="right">-93.2983</td>
+<td align="right">13.0</td>
+<td align="right">4.63</td>
+</tr>
+<tr>
+<td align="right">406</td>
+<td>Kindu</td>
+<td align="right">100</td>
+<td>CD</td>
+<td>2021-04-17</td>
+<td align="right">97</td>
+<td align="right">-2.95</td>
+<td align="right">25.95</td>
+<td align="right">20.15</td>
+<td align="right">0.31</td>
+</tr>
+<tr>
+<td align="right">407</td>
+<td>Port Alberni</td>
+<td align="right">0</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">23</td>
+<td align="right">49.2413</td>
+<td align="right">-124.8028</td>
+<td align="right">26.11</td>
+<td align="right">1.17</td>
+</tr>
+<tr>
+<td align="right">408</td>
+<td>Cache Creek</td>
+<td align="right">1</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">18</td>
+<td align="right">50.8101</td>
+<td align="right">-121.3246</td>
+<td align="right">28.0</td>
+<td align="right">4.12</td>
+</tr>
+<tr>
+<td align="right">409</td>
+<td>Kumul</td>
+<td align="right">100</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">14</td>
+<td align="right">42.8</td>
+<td align="right">93.45</td>
+<td align="right">17.48</td>
+<td align="right">5.24</td>
+</tr>
+<tr>
+<td align="right">410</td>
+<td>Saint-Leu</td>
+<td align="right">90</td>
+<td>RE</td>
+<td>2021-04-17</td>
+<td align="right">88</td>
+<td align="right">-21.15</td>
+<td align="right">55.2833</td>
+<td align="right">24.0</td>
+<td align="right">3.6</td>
+</tr>
+<tr>
+<td align="right">411</td>
+<td>Vangaindrano</td>
+<td align="right">20</td>
+<td>MG</td>
+<td>2021-04-17</td>
+<td align="right">68</td>
+<td align="right">-23.35</td>
+<td align="right">47.6</td>
+<td align="right">16.58</td>
+<td align="right">3.32</td>
+</tr>
+<tr>
+<td align="right">412</td>
+<td>Dubovyy Umët</td>
+<td align="right">0</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">48</td>
+<td align="right">52.9763</td>
+<td align="right">50.2857</td>
+<td align="right">5.0</td>
+<td align="right">2.0</td>
+</tr>
+<tr>
+<td align="right">413</td>
+<td>Kibala</td>
+<td align="right">0</td>
+<td>TD</td>
+<td>2021-04-17</td>
+<td align="right">44</td>
+<td align="right">9.1104</td>
+<td align="right">18.3463</td>
+<td align="right">27.0</td>
+<td align="right">2.49</td>
+</tr>
+<tr>
+<td align="right">414</td>
+<td>Fuxin</td>
+<td align="right">0</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">24</td>
+<td align="right">42.0156</td>
+<td align="right">121.6589</td>
+<td align="right">12.04</td>
+<td align="right">2.74</td>
+</tr>
+<tr>
+<td align="right">415</td>
+<td>Saint Anthony</td>
+<td align="right">90</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">33</td>
+<td align="right">45.0205</td>
+<td align="right">-93.218</td>
+<td align="right">13.0</td>
+<td align="right">4.63</td>
+</tr>
+<tr>
+<td align="right">416</td>
+<td>Mersing</td>
+<td align="right">20</td>
+<td>MY</td>
+<td>2021-04-17</td>
+<td align="right">100</td>
+<td align="right">2.4312</td>
+<td align="right">103.8405</td>
+<td align="right">22.0</td>
+<td align="right">3.6</td>
+</tr>
+<tr>
+<td align="right">417</td>
+<td>Altay</td>
+<td align="right">4</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">55</td>
+<td align="right">47.8667</td>
+<td align="right">88.1167</td>
+<td align="right">8.15</td>
+<td align="right">0.97</td>
+</tr>
+<tr>
+<td align="right">418</td>
+<td>Loa Janan</td>
+<td align="right">100</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">92</td>
+<td align="right">-0.583</td>
+<td align="right">117.095</td>
+<td align="right">24.39</td>
+<td align="right">1.5</td>
+</tr>
+<tr>
+<td align="right">419</td>
+<td>Río Gallegos</td>
+<td align="right">40</td>
+<td>AR</td>
+<td>2021-04-17</td>
+<td align="right">54</td>
+<td align="right">-51.6226</td>
+<td align="right">-69.2181</td>
+<td align="right">11.0</td>
+<td align="right">4.63</td>
+</tr>
+<tr>
+<td align="right">420</td>
+<td>Burayevo</td>
+<td align="right">1</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">73</td>
+<td align="right">55.8407</td>
+<td align="right">55.4083</td>
+<td align="right">2.98</td>
+<td align="right">2.02</td>
+</tr>
+<tr>
+<td align="right">421</td>
+<td>San Quintín</td>
+<td align="right">0</td>
+<td>MX</td>
+<td>2021-04-17</td>
+<td align="right">71</td>
+<td align="right">30.4833</td>
+<td align="right">-115.95</td>
+<td align="right">15.69</td>
+<td align="right">6.41</td>
+</tr>
+<tr>
+<td align="right">422</td>
+<td>Jalu</td>
+<td align="right">17</td>
+<td>LY</td>
+<td>2021-04-17</td>
+<td align="right">24</td>
+<td align="right">29.0331</td>
+<td align="right">21.5482</td>
+<td align="right">25.99</td>
+<td align="right">4.88</td>
+</tr>
+<tr>
+<td align="right">423</td>
+<td>Krasne</td>
+<td align="right">68</td>
+<td>UA</td>
+<td>2021-04-17</td>
+<td align="right">100</td>
+<td align="right">49.9145</td>
+<td align="right">24.6134</td>
+<td align="right">2.78</td>
+<td align="right">0.14</td>
+</tr>
+<tr>
+<td align="right">424</td>
+<td>Yashiro</td>
+<td align="right">40</td>
+<td>JP</td>
+<td>2021-04-17</td>
+<td align="right">62</td>
+<td align="right">34.9167</td>
+<td align="right">134.9667</td>
+<td align="right">14.0</td>
+<td align="right">8.75</td>
+</tr>
+<tr>
+<td align="right">425</td>
+<td>Nanning</td>
+<td align="right">90</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">100</td>
+<td align="right">22.8167</td>
+<td align="right">108.3167</td>
+<td align="right">18.0</td>
+<td align="right">1.0</td>
+</tr>
+<tr>
+<td align="right">426</td>
+<td>Gardner</td>
+<td align="right">90</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">66</td>
+<td align="right">42.5751</td>
+<td align="right">-71.9981</td>
+<td align="right">8.0</td>
+<td align="right">1.44</td>
+</tr>
+<tr>
+<td align="right">427</td>
+<td>Storslett</td>
+<td align="right">96</td>
+<td>NO</td>
+<td>2021-04-17</td>
+<td align="right">71</td>
+<td align="right">69.7678</td>
+<td align="right">21.0247</td>
+<td align="right">-0.09</td>
+<td align="right">4.09</td>
+</tr>
+<tr>
+<td align="right">428</td>
+<td>Talnakh</td>
+<td align="right">50</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">69.4865</td>
+<td align="right">88.3972</td>
+<td align="right">-26.52</td>
+<td align="right">0.38</td>
+</tr>
+<tr>
+<td align="right">429</td>
+<td>Belmonte</td>
+<td align="right">0</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">69</td>
+<td align="right">-15.8631</td>
+<td align="right">-38.8828</td>
+<td align="right">25.0</td>
+<td align="right">3.09</td>
+</tr>
+<tr>
+<td align="right">430</td>
+<td>Najrān</td>
+<td align="right">40</td>
+<td>SA</td>
+<td>2021-04-17</td>
+<td align="right">32</td>
+<td align="right">17.4924</td>
+<td align="right">44.1277</td>
+<td align="right">21.0</td>
+<td align="right">2.13</td>
+</tr>
+<tr>
+<td align="right">431</td>
+<td>Gīdolē</td>
+<td align="right">97</td>
+<td>ET</td>
+<td>2021-04-17</td>
+<td align="right">85</td>
+<td align="right">5.65</td>
+<td align="right">37.3667</td>
+<td align="right">13.07</td>
+<td align="right">1.52</td>
+</tr>
+<tr>
+<td align="right">432</td>
+<td>Nelson Bay</td>
+<td align="right">90</td>
+<td>AU</td>
+<td>2021-04-17</td>
+<td align="right">94</td>
+<td align="right">-32.7167</td>
+<td align="right">152.15</td>
+<td align="right">16.67</td>
+<td align="right">6.69</td>
+</tr>
+<tr>
+<td align="right">433</td>
+<td>Bonthe</td>
+<td align="right">99</td>
+<td>SL</td>
+<td>2021-04-17</td>
+<td align="right">83</td>
+<td align="right">7.5264</td>
+<td align="right">-12.505</td>
+<td align="right">25.92</td>
+<td align="right">0.97</td>
+</tr>
+<tr>
+<td align="right">434</td>
+<td>Verāval</td>
+<td align="right">0</td>
+<td>IN</td>
+<td>2021-04-17</td>
+<td align="right">82</td>
+<td align="right">20.9</td>
+<td align="right">70.3667</td>
+<td align="right">25.3</td>
+<td align="right">4.6</td>
+</tr>
+<tr>
+<td align="right">435</td>
+<td>Lompoc</td>
+<td align="right">10</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">72</td>
+<td align="right">34.6391</td>
+<td align="right">-120.4579</td>
+<td align="right">14.0</td>
+<td align="right">5.66</td>
+</tr>
+<tr>
+<td align="right">436</td>
+<td>Shimoda</td>
+<td align="right">20</td>
+<td>JP</td>
+<td>2021-04-17</td>
+<td align="right">51</td>
+<td align="right">34.6667</td>
+<td align="right">138.95</td>
+<td align="right">17.78</td>
+<td align="right">9.77</td>
+</tr>
+<tr>
+<td align="right">437</td>
+<td>Puerto Escondido</td>
+<td align="right">20</td>
+<td>MX</td>
+<td>2021-04-17</td>
+<td align="right">78</td>
+<td align="right">15.85</td>
+<td align="right">-97.0667</td>
+<td align="right">28.0</td>
+<td align="right">5.14</td>
+</tr>
+<tr>
+<td align="right">438</td>
+<td>Pokhara</td>
+<td align="right">2</td>
+<td>NP</td>
+<td>2021-04-17</td>
+<td align="right">26</td>
+<td align="right">28.2333</td>
+<td align="right">83.9833</td>
+<td align="right">22.04</td>
+<td align="right">2.55</td>
+</tr>
+<tr>
+<td align="right">439</td>
+<td>Dongying</td>
+<td align="right">0</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">16</td>
+<td align="right">37.4564</td>
+<td align="right">118.4856</td>
+<td align="right">16.14</td>
+<td align="right">4.0</td>
+</tr>
+<tr>
+<td align="right">440</td>
+<td>Pitimbu</td>
+<td align="right">0</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">100</td>
+<td align="right">-7.4706</td>
+<td align="right">-34.8086</td>
+<td align="right">23.0</td>
+<td align="right">2.57</td>
+</tr>
+<tr>
+<td align="right">441</td>
+<td>Nālūt</td>
+<td align="right">100</td>
+<td>LY</td>
+<td>2021-04-17</td>
+<td align="right">59</td>
+<td align="right">30.3333</td>
+<td align="right">10.85</td>
+<td align="right">16.92</td>
+<td align="right">5.64</td>
+</tr>
+<tr>
+<td align="right">442</td>
+<td>Sabang</td>
+<td align="right">100</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">72</td>
+<td align="right">5.8933</td>
+<td align="right">95.3214</td>
+<td align="right">28.35</td>
+<td align="right">4.14</td>
+</tr>
+<tr>
+<td align="right">443</td>
+<td>Togur</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">83</td>
+<td align="right">58.3631</td>
+<td align="right">82.8265</td>
+<td align="right">0.22</td>
+<td align="right">5.67</td>
+</tr>
+<tr>
+<td align="right">444</td>
+<td>Bahir Dar</td>
+<td align="right">25</td>
+<td>ET</td>
+<td>2021-04-17</td>
+<td align="right">56</td>
+<td align="right">11.5936</td>
+<td align="right">37.3908</td>
+<td align="right">19.03</td>
+<td align="right">2.64</td>
+</tr>
+<tr>
+<td align="right">445</td>
+<td>Puerto Quijarro</td>
+<td align="right">11</td>
+<td>BO</td>
+<td>2021-04-17</td>
+<td align="right">66</td>
+<td align="right">-17.7833</td>
+<td align="right">-57.7667</td>
+<td align="right">25.76</td>
+<td align="right">0.12</td>
+</tr>
+<tr>
+<td align="right">446</td>
+<td>Evensk</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">87</td>
+<td align="right">61.95</td>
+<td align="right">159.2333</td>
+<td align="right">-4.33</td>
+<td align="right">5.46</td>
+</tr>
+<tr>
+<td align="right">447</td>
+<td>Kyzyl-Suu</td>
+<td align="right">100</td>
+<td>KG</td>
+<td>2021-04-17</td>
+<td align="right">54</td>
+<td align="right">42.3414</td>
+<td align="right">78.0056</td>
+<td align="right">7.41</td>
+<td align="right">1.57</td>
+</tr>
+<tr>
+<td align="right">448</td>
+<td>Praia</td>
+<td align="right">20</td>
+<td>CV</td>
+<td>2021-04-17</td>
+<td align="right">78</td>
+<td align="right">14.9215</td>
+<td align="right">-23.5087</td>
+<td align="right">21.0</td>
+<td align="right">9.26</td>
+</tr>
+<tr>
+<td align="right">449</td>
+<td>Acarigua</td>
+<td align="right">89</td>
+<td>VE</td>
+<td>2021-04-17</td>
+<td align="right">59</td>
+<td align="right">9.5545</td>
+<td align="right">-69.1956</td>
+<td align="right">27.22</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">450</td>
+<td>Bongandanga</td>
+<td align="right">100</td>
+<td>CD</td>
+<td>2021-04-17</td>
+<td align="right">94</td>
+<td align="right">1.5</td>
+<td align="right">21.05</td>
+<td align="right">21.43</td>
+<td align="right">1.41</td>
+</tr>
+<tr>
+<td align="right">451</td>
+<td>Biak</td>
+<td align="right">81</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">66</td>
+<td align="right">-0.9131</td>
+<td align="right">122.8766</td>
+<td align="right">27.67</td>
+<td align="right">1.78</td>
+</tr>
+<tr>
+<td align="right">452</td>
+<td>Tuatapere</td>
+<td align="right">62</td>
+<td>NZ</td>
+<td>2021-04-17</td>
+<td align="right">74</td>
+<td align="right">-46.1333</td>
+<td align="right">167.6833</td>
+<td align="right">15.0</td>
+<td align="right">3.58</td>
+</tr>
+<tr>
+<td align="right">453</td>
+<td>Mount Gambier</td>
+<td align="right">90</td>
+<td>AU</td>
+<td>2021-04-17</td>
+<td align="right">94</td>
+<td align="right">-37.8333</td>
+<td align="right">140.7667</td>
+<td align="right">15.0</td>
+<td align="right">3.09</td>
+</tr>
+<tr>
+<td align="right">454</td>
+<td>Praia</td>
+<td align="right">20</td>
+<td>CV</td>
+<td>2021-04-17</td>
+<td align="right">78</td>
+<td align="right">14.9215</td>
+<td align="right">-23.5087</td>
+<td align="right">21.0</td>
+<td align="right">9.26</td>
+</tr>
+<tr>
+<td align="right">455</td>
+<td>Port Hardy</td>
+<td align="right">1</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">37</td>
+<td align="right">50.6996</td>
+<td align="right">-127.4199</td>
+<td align="right">21.0</td>
+<td align="right">4.63</td>
+</tr>
+<tr>
+<td align="right">456</td>
+<td>Sheltozero</td>
+<td align="right">3</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">96</td>
+<td align="right">61.3667</td>
+<td align="right">35.3667</td>
+<td align="right">-1.08</td>
+<td align="right">1.65</td>
+</tr>
+<tr>
+<td align="right">457</td>
+<td>Guerrero Negro</td>
+<td align="right">0</td>
+<td>MX</td>
+<td>2021-04-17</td>
+<td align="right">71</td>
+<td align="right">27.9769</td>
+<td align="right">-114.0611</td>
+<td align="right">16.41</td>
+<td align="right">9.39</td>
+</tr>
+<tr>
+<td align="right">458</td>
+<td>Cabedelo</td>
+<td align="right">0</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">100</td>
+<td align="right">-6.9811</td>
+<td align="right">-34.8339</td>
+<td align="right">23.0</td>
+<td align="right">2.57</td>
+</tr>
+<tr>
+<td align="right">459</td>
+<td>Malpe</td>
+<td align="right">20</td>
+<td>IN</td>
+<td>2021-04-17</td>
+<td align="right">89</td>
+<td align="right">13.35</td>
+<td align="right">74.7167</td>
+<td align="right">27.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">460</td>
+<td>Tālīkota</td>
+<td align="right">12</td>
+<td>IN</td>
+<td>2021-04-17</td>
+<td align="right">39</td>
+<td align="right">16.4833</td>
+<td align="right">76.3167</td>
+<td align="right">28.87</td>
+<td align="right">3.54</td>
+</tr>
+<tr>
+<td align="right">461</td>
+<td>Bandar-e Lengeh</td>
+<td align="right">95</td>
+<td>IR</td>
+<td>2021-04-17</td>
+<td align="right">78</td>
+<td align="right">26.5579</td>
+<td align="right">54.8807</td>
+<td align="right">23.0</td>
+<td align="right">1.24</td>
+</tr>
+<tr>
+<td align="right">462</td>
+<td>Asău</td>
+<td align="right">49</td>
+<td>RO</td>
+<td>2021-04-17</td>
+<td align="right">54</td>
+<td align="right">46.4333</td>
+<td align="right">26.4</td>
+<td align="right">4.44</td>
+<td align="right">1.47</td>
+</tr>
+<tr>
+<td align="right">463</td>
+<td>Mumbwa</td>
+<td align="right">100</td>
+<td>ZM</td>
+<td>2021-04-17</td>
+<td align="right">77</td>
+<td align="right">-14.9783</td>
+<td align="right">27.0619</td>
+<td align="right">15.68</td>
+<td align="right">4.01</td>
+</tr>
+<tr>
+<td align="right">464</td>
+<td>Banjarmasin</td>
+<td align="right">66</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">78</td>
+<td align="right">-3.3244</td>
+<td align="right">114.591</td>
+<td align="right">27.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">465</td>
+<td>Tezu</td>
+<td align="right">49</td>
+<td>IN</td>
+<td>2021-04-17</td>
+<td align="right">56</td>
+<td align="right">27.9167</td>
+<td align="right">96.1667</td>
+<td align="right">24.13</td>
+<td align="right">0.46</td>
+</tr>
+<tr>
+<td align="right">466</td>
+<td>Mehamn</td>
+<td align="right">68</td>
+<td>NO</td>
+<td>2021-04-17</td>
+<td align="right">81</td>
+<td align="right">71.0357</td>
+<td align="right">27.8492</td>
+<td align="right">1.42</td>
+<td align="right">5.09</td>
+</tr>
+<tr>
+<td align="right">467</td>
+<td>Vanimo</td>
+<td align="right">96</td>
+<td>PG</td>
+<td>2021-04-17</td>
+<td align="right">65</td>
+<td align="right">-2.6741</td>
+<td align="right">141.3028</td>
+<td align="right">29.27</td>
+<td align="right">2.2</td>
+</tr>
+<tr>
+<td align="right">468</td>
+<td>Kargil</td>
+<td align="right">100</td>
+<td>IN</td>
+<td>2021-04-17</td>
+<td align="right">71</td>
+<td align="right">34.5667</td>
+<td align="right">76.1</td>
+<td align="right">-0.38</td>
+<td align="right">3.21</td>
+</tr>
+<tr>
+<td align="right">469</td>
+<td>Koumac</td>
+<td align="right">65</td>
+<td>NC</td>
+<td>2021-04-17</td>
+<td align="right">65</td>
+<td align="right">-20.5667</td>
+<td align="right">164.2833</td>
+<td align="right">27.82</td>
+<td align="right">2.01</td>
+</tr>
+<tr>
+<td align="right">470</td>
+<td>Flagstaff</td>
+<td align="right">90</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">52</td>
+<td align="right">35.1981</td>
+<td align="right">-111.6513</td>
+<td align="right">7.78</td>
+<td align="right">3.6</td>
+</tr>
+<tr>
+<td align="right">471</td>
+<td>Tadine</td>
+<td align="right">47</td>
+<td>NC</td>
+<td>2021-04-17</td>
+<td align="right">67</td>
+<td align="right">-21.55</td>
+<td align="right">167.8833</td>
+<td align="right">26.37</td>
+<td align="right">5.18</td>
+</tr>
+<tr>
+<td align="right">472</td>
+<td>Arenápolis</td>
+<td align="right">21</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">94</td>
+<td align="right">-14.4503</td>
+<td align="right">-56.8461</td>
+<td align="right">21.78</td>
+<td align="right">1.92</td>
+</tr>
+<tr>
+<td align="right">473</td>
+<td>Boo</td>
+<td align="right">69</td>
+<td>SE</td>
+<td>2021-04-17</td>
+<td align="right">75</td>
+<td align="right">59.3333</td>
+<td align="right">18.2833</td>
+<td align="right">4.44</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">474</td>
+<td>Katobu</td>
+<td align="right">95</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">66</td>
+<td align="right">-4.9408</td>
+<td align="right">122.5276</td>
+<td align="right">29.08</td>
+<td align="right">1.55</td>
+</tr>
+<tr>
+<td align="right">475</td>
+<td>Ginda</td>
+<td align="right">0</td>
+<td>IN</td>
+<td>2021-04-17</td>
+<td align="right">64</td>
+<td align="right">30.6945</td>
+<td align="right">78.4932</td>
+<td align="right">8.94</td>
+<td align="right">3.37</td>
+</tr>
+<tr>
+<td align="right">476</td>
+<td>Petropavlovsk-Kamchatskiy</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">34</td>
+<td align="right">53.0452</td>
+<td align="right">158.6483</td>
+<td align="right">10.0</td>
+<td align="right">4.0</td>
+</tr>
+<tr>
+<td align="right">477</td>
+<td>Monticello</td>
+<td align="right">40</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">32</td>
+<td align="right">45.3055</td>
+<td align="right">-93.7941</td>
+<td align="right">12.0</td>
+<td align="right">2.5</td>
+</tr>
+<tr>
+<td align="right">478</td>
+<td>Dzilam González</td>
+<td align="right">30</td>
+<td>MX</td>
+<td>2021-04-17</td>
+<td align="right">56</td>
+<td align="right">21.2833</td>
+<td align="right">-88.9333</td>
+<td align="right">30.0</td>
+<td align="right">3.28</td>
+</tr>
+<tr>
+<td align="right">479</td>
+<td>Isangel</td>
+<td align="right">75</td>
+<td>VU</td>
+<td>2021-04-17</td>
+<td align="right">83</td>
+<td align="right">-19.55</td>
+<td align="right">169.2667</td>
+<td align="right">28.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">480</td>
+<td>Montebello</td>
+<td align="right">1</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">43</td>
+<td align="right">34.0095</td>
+<td align="right">-118.1053</td>
+<td align="right">23.33</td>
+<td align="right">4.12</td>
+</tr>
+<tr>
+<td align="right">481</td>
+<td>Husavik</td>
+<td align="right">75</td>
+<td>IS</td>
+<td>2021-04-17</td>
+<td align="right">100</td>
+<td align="right">66.0449</td>
+<td align="right">-17.3389</td>
+<td align="right">3.0</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">482</td>
+<td>San-Pédro</td>
+<td align="right">98</td>
+<td>CI</td>
+<td>2021-04-17</td>
+<td align="right">91</td>
+<td align="right">4.7485</td>
+<td align="right">-6.6363</td>
+<td align="right">24.33</td>
+<td align="right">1.48</td>
+</tr>
+<tr>
+<td align="right">483</td>
+<td>Hella</td>
+<td align="right">0</td>
+<td>NO</td>
+<td>2021-04-17</td>
+<td align="right">65</td>
+<td align="right">67.2</td>
+<td align="right">14.4333</td>
+<td align="right">4.0</td>
+<td align="right">5.66</td>
+</tr>
+<tr>
+<td align="right">484</td>
+<td>Enid</td>
+<td align="right">90</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">66</td>
+<td align="right">36.3956</td>
+<td align="right">-97.8784</td>
+<td align="right">11.0</td>
+<td align="right">3.6</td>
+</tr>
+<tr>
+<td align="right">485</td>
+<td>Mikhaylovsk</td>
+<td align="right">40</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">45.1283</td>
+<td align="right">42.0256</td>
+<td align="right">8.0</td>
+<td align="right">3.0</td>
+</tr>
+<tr>
+<td align="right">486</td>
+<td>Pavlovka</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">86</td>
+<td align="right">52.6897</td>
+<td align="right">47.1405</td>
+<td align="right">9.23</td>
+<td align="right">3.22</td>
+</tr>
+<tr>
+<td align="right">487</td>
+<td>Saint-Louis</td>
+<td align="right">0</td>
+<td>SN</td>
+<td>2021-04-17</td>
+<td align="right">25</td>
+<td align="right">16.3333</td>
+<td align="right">-15.0</td>
+<td align="right">31.0</td>
+<td align="right">1.03</td>
+</tr>
+<tr>
+<td align="right">488</td>
+<td>La Unión</td>
+<td align="right">100</td>
+<td>PE</td>
+<td>2021-04-17</td>
+<td align="right">61</td>
+<td align="right">-5.4</td>
+<td align="right">-80.75</td>
+<td align="right">24.14</td>
+<td align="right">7.31</td>
+</tr>
+<tr>
+<td align="right">489</td>
+<td>Kalabo</td>
+<td align="right">1</td>
+<td>ZM</td>
+<td>2021-04-17</td>
+<td align="right">56</td>
+<td align="right">-14.97</td>
+<td align="right">22.6814</td>
+<td align="right">16.75</td>
+<td align="right">3.13</td>
+</tr>
+<tr>
+<td align="right">490</td>
+<td>Taree</td>
+<td align="right">90</td>
+<td>AU</td>
+<td>2021-04-17</td>
+<td align="right">72</td>
+<td align="right">-31.9</td>
+<td align="right">152.4667</td>
+<td align="right">18.89</td>
+<td align="right">4.12</td>
+</tr>
+<tr>
+<td align="right">491</td>
+<td>Linguère</td>
+<td align="right">0</td>
+<td>SN</td>
+<td>2021-04-17</td>
+<td align="right">19</td>
+<td align="right">15.3953</td>
+<td align="right">-15.1193</td>
+<td align="right">32.0</td>
+<td align="right">3.09</td>
+</tr>
+<tr>
+<td align="right">492</td>
+<td>Esmeraldas</td>
+<td align="right">0</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">72</td>
+<td align="right">-19.7625</td>
+<td align="right">-44.3139</td>
+<td align="right">20.0</td>
+<td align="right">1.03</td>
+</tr>
+<tr>
+<td align="right">493</td>
+<td>Bahía Honda</td>
+<td align="right">4</td>
+<td>CU</td>
+<td>2021-04-17</td>
+<td align="right">82</td>
+<td align="right">22.9036</td>
+<td align="right">-83.1592</td>
+<td align="right">24.88</td>
+<td align="right">1.14</td>
+</tr>
+<tr>
+<td align="right">494</td>
+<td>Sistranda</td>
+<td align="right">0</td>
+<td>NO</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">63.7256</td>
+<td align="right">8.834</td>
+<td align="right">3.0</td>
+<td align="right">2.57</td>
+</tr>
+<tr>
+<td align="right">495</td>
+<td>Shakawe</td>
+<td align="right">0</td>
+<td>BW</td>
+<td>2021-04-17</td>
+<td align="right">61</td>
+<td align="right">-18.3667</td>
+<td align="right">21.85</td>
+<td align="right">15.67</td>
+<td align="right">2.72</td>
+</tr>
+<tr>
+<td align="right">496</td>
+<td>Barranca</td>
+<td align="right">96</td>
+<td>PE</td>
+<td>2021-04-17</td>
+<td align="right">87</td>
+<td align="right">-10.75</td>
+<td align="right">-77.7667</td>
+<td align="right">19.58</td>
+<td align="right">2.49</td>
+</tr>
+<tr>
+<td align="right">497</td>
+<td>Mitsamiouli</td>
+<td align="right">32</td>
+<td>KM</td>
+<td>2021-04-17</td>
+<td align="right">76</td>
+<td align="right">-11.3847</td>
+<td align="right">43.2844</td>
+<td align="right">27.06</td>
+<td align="right">6.81</td>
+</tr>
+<tr>
+<td align="right">498</td>
+<td>Stillwater</td>
+<td align="right">90</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">58</td>
+<td align="right">36.1156</td>
+<td align="right">-97.0584</td>
+<td align="right">12.0</td>
+<td align="right">3.6</td>
+</tr>
+<tr>
+<td align="right">499</td>
+<td>Vanavara</td>
+<td align="right">84</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">74</td>
+<td align="right">60.34</td>
+<td align="right">102.2797</td>
+<td align="right">-7.96</td>
+<td align="right">3.26</td>
+</tr>
+<tr>
+<td align="right">500</td>
+<td>Lashio</td>
+<td align="right">1</td>
+<td>MM</td>
+<td>2021-04-17</td>
+<td align="right">62</td>
+<td align="right">22.9333</td>
+<td align="right">97.75</td>
+<td align="right">21.09</td>
+<td align="right">0.17</td>
+</tr>
+<tr>
+<td align="right">501</td>
+<td>Yantal&#39;</td>
+<td align="right">58</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">65</td>
+<td align="right">56.8471</td>
+<td align="right">105.2542</td>
+<td align="right">-6.31</td>
+<td align="right">2.63</td>
+</tr>
+<tr>
+<td align="right">502</td>
+<td>Boquira</td>
+<td align="right">100</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">47</td>
+<td align="right">-12.8231</td>
+<td align="right">-42.7306</td>
+<td align="right">24.93</td>
+<td align="right">1.0</td>
+</tr>
+<tr>
+<td align="right">503</td>
+<td>Ternate</td>
+<td align="right">44</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">73</td>
+<td align="right">0.8</td>
+<td align="right">127.4</td>
+<td align="right">28.4</td>
+<td align="right">3.02</td>
+</tr>
+<tr>
+<td align="right">504</td>
+<td>Santiago del Estero</td>
+<td align="right">79</td>
+<td>AR</td>
+<td>2021-04-17</td>
+<td align="right">67</td>
+<td align="right">-27.7951</td>
+<td align="right">-64.2615</td>
+<td align="right">24.6</td>
+<td align="right">1.86</td>
+</tr>
+<tr>
+<td align="right">505</td>
+<td>Fort Frances</td>
+<td align="right">1</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">28</td>
+<td align="right">48.5999</td>
+<td align="right">-93.4003</td>
+<td align="right">12.0</td>
+<td align="right">4.63</td>
+</tr>
+<tr>
+<td align="right">506</td>
+<td>Puerto Colombia</td>
+<td align="right">0</td>
+<td>CO</td>
+<td>2021-04-17</td>
+<td align="right">78</td>
+<td align="right">10.9878</td>
+<td align="right">-74.9547</td>
+<td align="right">28.0</td>
+<td align="right">3.6</td>
+</tr>
+<tr>
+<td align="right">507</td>
+<td>Edd</td>
+<td align="right">33</td>
+<td>ER</td>
+<td>2021-04-17</td>
+<td align="right">48</td>
+<td align="right">13.9297</td>
+<td align="right">41.6925</td>
+<td align="right">29.6</td>
+<td align="right">4.19</td>
+</tr>
+<tr>
+<td align="right">508</td>
+<td>Bonavista</td>
+<td align="right">99</td>
+<td>CA</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">48.6499</td>
+<td align="right">-53.1147</td>
+<td align="right">1.67</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">509</td>
+<td>Codrington</td>
+<td align="right">84</td>
+<td>AU</td>
+<td>2021-04-17</td>
+<td align="right">72</td>
+<td align="right">-38.2667</td>
+<td align="right">141.9667</td>
+<td align="right">16.66</td>
+<td align="right">4.56</td>
+</tr>
+<tr>
+<td align="right">510</td>
+<td>Massaguet</td>
+<td align="right">0</td>
+<td>TD</td>
+<td>2021-04-17</td>
+<td align="right">10</td>
+<td align="right">12.4755</td>
+<td align="right">15.4365</td>
+<td align="right">27.0</td>
+<td align="right">1.54</td>
+</tr>
+<tr>
+<td align="right">511</td>
+<td>Fort-Shevchenko</td>
+<td align="right">100</td>
+<td>KZ</td>
+<td>2021-04-17</td>
+<td align="right">52</td>
+<td align="right">44.5086</td>
+<td align="right">50.263</td>
+<td align="right">14.69</td>
+<td align="right">3.96</td>
+</tr>
+<tr>
+<td align="right">512</td>
+<td>Xai-Xai</td>
+<td align="right">43</td>
+<td>MZ</td>
+<td>2021-04-17</td>
+<td align="right">64</td>
+<td align="right">-25.0519</td>
+<td align="right">33.6442</td>
+<td align="right">19.14</td>
+<td align="right">0.32</td>
+</tr>
+<tr>
+<td align="right">513</td>
+<td>Nkoteng</td>
+<td align="right">100</td>
+<td>CM</td>
+<td>2021-04-17</td>
+<td align="right">97</td>
+<td align="right">4.5167</td>
+<td align="right">12.0333</td>
+<td align="right">20.57</td>
+<td align="right">1.25</td>
+</tr>
+<tr>
+<td align="right">514</td>
+<td>Kropotkin</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">92</td>
+<td align="right">45.4375</td>
+<td align="right">40.5756</td>
+<td align="right">8.7</td>
+<td align="right">2.95</td>
+</tr>
+<tr>
+<td align="right">515</td>
+<td>Lagoa</td>
+<td align="right">13</td>
+<td>PT</td>
+<td>2021-04-17</td>
+<td align="right">91</td>
+<td align="right">39.05</td>
+<td align="right">-27.9833</td>
+<td align="right">16.05</td>
+<td align="right">8.23</td>
+</tr>
+<tr>
+<td align="right">516</td>
+<td>Mazatlán</td>
+<td align="right">1</td>
+<td>MX</td>
+<td>2021-04-17</td>
+<td align="right">61</td>
+<td align="right">23.2167</td>
+<td align="right">-106.4167</td>
+<td align="right">26.67</td>
+<td align="right">3.6</td>
+</tr>
+<tr>
+<td align="right">517</td>
+<td>Honiara</td>
+<td align="right">86</td>
+<td>SB</td>
+<td>2021-04-17</td>
+<td align="right">71</td>
+<td align="right">-9.4333</td>
+<td align="right">159.95</td>
+<td align="right">30.0</td>
+<td align="right">2.62</td>
+</tr>
+<tr>
+<td align="right">518</td>
+<td>Makkah al Mukarramah</td>
+<td align="right">73</td>
+<td>SA</td>
+<td>2021-04-17</td>
+<td align="right">44</td>
+<td align="right">21.4267</td>
+<td align="right">39.8261</td>
+<td align="right">26.87</td>
+<td align="right">7.2</td>
+</tr>
+<tr>
+<td align="right">519</td>
+<td>Saint-Joseph</td>
+<td align="right">90</td>
+<td>RE</td>
+<td>2021-04-17</td>
+<td align="right">88</td>
+<td align="right">-21.3667</td>
+<td align="right">55.6167</td>
+<td align="right">23.0</td>
+<td align="right">3.6</td>
+</tr>
+<tr>
+<td align="right">520</td>
+<td>Kushima</td>
+<td align="right">40</td>
+<td>JP</td>
+<td>2021-04-17</td>
+<td align="right">47</td>
+<td align="right">31.4583</td>
+<td align="right">131.2333</td>
+<td align="right">14.0</td>
+<td align="right">8.75</td>
+</tr>
+<tr>
+<td align="right">521</td>
+<td>Buala</td>
+<td align="right">97</td>
+<td>SB</td>
+<td>2021-04-17</td>
+<td align="right">67</td>
+<td align="right">-8.145</td>
+<td align="right">159.5921</td>
+<td align="right">29.92</td>
+<td align="right">2.83</td>
+</tr>
+<tr>
+<td align="right">522</td>
+<td>Mangan</td>
+<td align="right">100</td>
+<td>IN</td>
+<td>2021-04-17</td>
+<td align="right">69</td>
+<td align="right">27.5167</td>
+<td align="right">88.5333</td>
+<td align="right">18.98</td>
+<td align="right">1.57</td>
+</tr>
+<tr>
+<td align="right">523</td>
+<td>Malmesbury</td>
+<td align="right">0</td>
+<td>ZA</td>
+<td>2021-04-17</td>
+<td align="right">77</td>
+<td align="right">-33.4608</td>
+<td align="right">18.7271</td>
+<td align="right">20.56</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">524</td>
+<td>Smidovich</td>
+<td align="right">7</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">63</td>
+<td align="right">48.6</td>
+<td align="right">133.8167</td>
+<td align="right">8.65</td>
+<td align="right">1.88</td>
+</tr>
+<tr>
+<td align="right">525</td>
+<td>Linxi</td>
+<td align="right">0</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">15</td>
+<td align="right">39.7</td>
+<td align="right">118.4333</td>
+<td align="right">15.3</td>
+<td align="right">3.49</td>
+</tr>
+<tr>
+<td align="right">526</td>
+<td>Karasjok</td>
+<td align="right">100</td>
+<td>NO</td>
+<td>2021-04-17</td>
+<td align="right">80</td>
+<td align="right">69.4719</td>
+<td align="right">25.5112</td>
+<td align="right">1.0</td>
+<td align="right">2.45</td>
+</tr>
+<tr>
+<td align="right">527</td>
+<td>Kupang</td>
+<td align="right">17</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">70</td>
+<td align="right">-10.1667</td>
+<td align="right">123.5833</td>
+<td align="right">28.14</td>
+<td align="right">3.17</td>
+</tr>
+<tr>
+<td align="right">528</td>
+<td>Sukumo</td>
+<td align="right">59</td>
+<td>JP</td>
+<td>2021-04-17</td>
+<td align="right">55</td>
+<td align="right">32.9333</td>
+<td align="right">132.7333</td>
+<td align="right">11.97</td>
+<td align="right">6.47</td>
+</tr>
+<tr>
+<td align="right">529</td>
+<td>Khovu-Aksy</td>
+<td align="right">11</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">58</td>
+<td align="right">51.1333</td>
+<td align="right">93.6</td>
+<td align="right">0.64</td>
+<td align="right">1.06</td>
+</tr>
+<tr>
+<td align="right">530</td>
+<td>Tari</td>
+<td align="right">72</td>
+<td>NG</td>
+<td>2021-04-17</td>
+<td align="right">25</td>
+<td align="right">12.4086</td>
+<td align="right">4.4914</td>
+<td align="right">31.88</td>
+<td align="right">3.94</td>
+</tr>
+<tr>
+<td align="right">531</td>
+<td>Lae</td>
+<td align="right">75</td>
+<td>PG</td>
+<td>2021-04-17</td>
+<td align="right">83</td>
+<td align="right">-6.7221</td>
+<td align="right">146.9847</td>
+<td align="right">27.0</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">532</td>
+<td>Messina</td>
+<td align="right">90</td>
+<td>IT</td>
+<td>2021-04-17</td>
+<td align="right">71</td>
+<td align="right">38.1933</td>
+<td align="right">15.5497</td>
+<td align="right">13.89</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">533</td>
+<td>Vallenar</td>
+<td align="right">0</td>
+<td>CL</td>
+<td>2021-04-17</td>
+<td align="right">66</td>
+<td align="right">-28.5708</td>
+<td align="right">-70.7581</td>
+<td align="right">18.71</td>
+<td align="right">0.67</td>
+</tr>
+<tr>
+<td align="right">534</td>
+<td>Ocampo</td>
+<td align="right">5</td>
+<td>MX</td>
+<td>2021-04-17</td>
+<td align="right">7</td>
+<td align="right">21.65</td>
+<td align="right">-101.5</td>
+<td align="right">22.42</td>
+<td align="right">6.17</td>
+</tr>
+<tr>
+<td align="right">535</td>
+<td>Llanes</td>
+<td align="right">0</td>
+<td>ES</td>
+<td>2021-04-17</td>
+<td align="right">81</td>
+<td align="right">43.4198</td>
+<td align="right">-4.7549</td>
+<td align="right">5.0</td>
+<td align="right">0.89</td>
+</tr>
+<tr>
+<td align="right">536</td>
+<td>Palmer</td>
+<td align="right">90</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">81</td>
+<td align="right">42.1584</td>
+<td align="right">-72.3287</td>
+<td align="right">5.56</td>
+<td align="right">1.18</td>
+</tr>
+<tr>
+<td align="right">537</td>
+<td>Ola</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">86</td>
+<td align="right">59.5833</td>
+<td align="right">151.2833</td>
+<td align="right">-1.21</td>
+<td align="right">2.6</td>
+</tr>
+<tr>
+<td align="right">538</td>
+<td>Aksu</td>
+<td align="right">75</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">28</td>
+<td align="right">41.1231</td>
+<td align="right">80.2644</td>
+<td align="right">14.5</td>
+<td align="right">1.8</td>
+</tr>
+<tr>
+<td align="right">539</td>
+<td>Kendal</td>
+<td align="right">100</td>
+<td>GB</td>
+<td>2021-04-17</td>
+<td align="right">73</td>
+<td align="right">54.3268</td>
+<td align="right">-2.7476</td>
+<td align="right">6.67</td>
+<td align="right">0.9</td>
+</tr>
+<tr>
+<td align="right">540</td>
+<td>Muzhi</td>
+<td align="right">14</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">96</td>
+<td align="right">65.3667</td>
+<td align="right">64.6667</td>
+<td align="right">-22.12</td>
+<td align="right">1.77</td>
+</tr>
+<tr>
+<td align="right">541</td>
+<td>Bartica</td>
+<td align="right">0</td>
+<td>GY</td>
+<td>2021-04-17</td>
+<td align="right">83</td>
+<td align="right">6.4</td>
+<td align="right">-58.6167</td>
+<td align="right">26.0</td>
+<td align="right">3.09</td>
+</tr>
+<tr>
+<td align="right">542</td>
+<td>Vao</td>
+<td align="right">24</td>
+<td>NC</td>
+<td>2021-04-17</td>
+<td align="right">77</td>
+<td align="right">-22.6667</td>
+<td align="right">167.4833</td>
+<td align="right">23.85</td>
+<td align="right">8.09</td>
+</tr>
+<tr>
+<td align="right">543</td>
+<td>Bonfim</td>
+<td align="right">30</td>
+<td>BR</td>
+<td>2021-04-17</td>
+<td align="right">66</td>
+<td align="right">3.0833</td>
+<td align="right">-59.95</td>
+<td align="right">26.66</td>
+<td align="right">3.99</td>
+</tr>
+<tr>
+<td align="right">544</td>
+<td>Izhma</td>
+<td align="right">100</td>
+<td>RU</td>
+<td>2021-04-17</td>
+<td align="right">88</td>
+<td align="right">65.0083</td>
+<td align="right">53.9113</td>
+<td align="right">-6.62</td>
+<td align="right">3.69</td>
+</tr>
+<tr>
+<td align="right">545</td>
+<td>Srandakan</td>
+<td align="right">34</td>
+<td>ID</td>
+<td>2021-04-17</td>
+<td align="right">77</td>
+<td align="right">-7.9386</td>
+<td align="right">110.2506</td>
+<td align="right">26.72</td>
+<td align="right">1.12</td>
+</tr>
+<tr>
+<td align="right">546</td>
+<td>Olafsvik</td>
+<td align="right">100</td>
+<td>IS</td>
+<td>2021-04-17</td>
+<td align="right">63</td>
+<td align="right">64.8945</td>
+<td align="right">-23.7142</td>
+<td align="right">2.76</td>
+<td align="right">7.07</td>
+</tr>
+<tr>
+<td align="right">547</td>
+<td>Nome</td>
+<td align="right">1</td>
+<td>US</td>
+<td>2021-04-17</td>
+<td align="right">75</td>
+<td align="right">64.5011</td>
+<td align="right">-165.4064</td>
+<td align="right">1.0</td>
+<td align="right">4.12</td>
+</tr>
+<tr>
+<td align="right">548</td>
+<td>Nehe</td>
+<td align="right">0</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">37</td>
+<td align="right">48.4833</td>
+<td align="right">124.8333</td>
+<td align="right">9.69</td>
+<td align="right">5.0</td>
+</tr>
+<tr>
+<td align="right">549</td>
+<td>Adré</td>
+<td align="right">100</td>
+<td>TD</td>
+<td>2021-04-17</td>
+<td align="right">10</td>
+<td align="right">13.4667</td>
+<td align="right">22.2</td>
+<td align="right">23.34</td>
+<td align="right">4.72</td>
+</tr>
+<tr>
+<td align="right">550</td>
+<td>Taikang</td>
+<td align="right">0</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">36</td>
+<td align="right">46.8333</td>
+<td align="right">124.4167</td>
+<td align="right">9.8</td>
+<td align="right">5.91</td>
+</tr>
+<tr>
+<td align="right">551</td>
+<td>Benidorm</td>
+<td align="right">54</td>
+<td>ES</td>
+<td>2021-04-17</td>
+<td align="right">82</td>
+<td align="right">38.5382</td>
+<td align="right">-0.131</td>
+<td align="right">11.11</td>
+<td align="right">0.89</td>
+</tr>
+<tr>
+<td align="right">552</td>
+<td>Maryborough</td>
+<td align="right">57</td>
+<td>AU</td>
+<td>2021-04-17</td>
+<td align="right">71</td>
+<td align="right">-25.5333</td>
+<td align="right">152.7</td>
+<td align="right">23.89</td>
+<td align="right">2.24</td>
+</tr>
+<tr>
+<td align="right">553</td>
+<td>Mbaïki</td>
+<td align="right">100</td>
+<td>CF</td>
+<td>2021-04-17</td>
+<td align="right">96</td>
+<td align="right">3.8678</td>
+<td align="right">17.9892</td>
+<td align="right">21.1</td>
+<td align="right">1.05</td>
+</tr>
+<tr>
+<td align="right">554</td>
+<td>Pochutla</td>
+<td align="right">0</td>
+<td>MX</td>
+<td>2021-04-17</td>
+<td align="right">73</td>
+<td align="right">15.7432</td>
+<td align="right">-96.4661</td>
+<td align="right">27.22</td>
+<td align="right">3.13</td>
+</tr>
+<tr>
+<td align="right">555</td>
+<td>Sikasso</td>
+<td align="right">100</td>
+<td>ML</td>
+<td>2021-04-17</td>
+<td align="right">57</td>
+<td align="right">10.9167</td>
+<td align="right">-7.0</td>
+<td align="right">25.94</td>
+<td align="right">1.65</td>
+</tr>
+<tr>
+<td align="right">556</td>
+<td>Lengshuijiang</td>
+<td align="right">100</td>
+<td>CN</td>
+<td>2021-04-17</td>
+<td align="right">91</td>
+<td align="right">27.6881</td>
+<td align="right">111.4294</td>
+<td align="right">15.27</td>
+<td align="right">1.18</td>
+</tr>
+<tr>
+<td align="right">557</td>
+<td>Abu Kamal</td>
+<td align="right">12</td>
+<td>SY</td>
+<td>2021-04-17</td>
+<td align="right">24</td>
+<td align="right">34.4506</td>
+<td align="right">40.9171</td>
+<td align="right">22.38</td>
+<td align="right">0.84</td>
+</tr>
+<tr>
+<td align="right">558</td>
+<td>Salalah</td>
+<td align="right">0</td>
+<td>OM</td>
+<td>2021-04-17</td>
+<td align="right">50</td>
+<td align="right">17.0151</td>
+<td align="right">54.0924</td>
+<td align="right">25.0</td>
+<td align="right">2.06</td>
+</tr>
+<tr>
+<td align="right">559</td>
+<td>Gigmoto</td>
+<td align="right">100</td>
+<td>PH</td>
+<td>2021-04-17</td>
+<td align="right">92</td>
+<td align="right">13.7796</td>
+<td align="right">124.39</td>
+<td align="right">25.52</td>
+<td align="right">12.2</td>
+</tr>
+<tr>
+<td align="right">560</td>
+<td>Ngunguru</td>
+<td align="right">100</td>
+<td>NZ</td>
+<td>2021-04-17</td>
+<td align="right">59</td>
+<td align="right">-35.6167</td>
+<td align="right">174.5</td>
+<td align="right">18.89</td>
+<td align="right">1.79</td>
+</tr>
+<tr>
+<td align="right">561</td>
+<td>Yoichi</td>
+<td align="right">75</td>
+<td>JP</td>
+<td>2021-04-17</td>
+<td align="right">93</td>
+<td align="right">43.2039</td>
+<td align="right">140.7703</td>
+<td align="right">9.0</td>
+<td align="right">5.14</td>
+</tr>
+<tr>
+<td align="right">562</td>
+<td>Miraflores</td>
+<td align="right">40</td>
+<td>MX</td>
+<td>2021-04-17</td>
+<td align="right">17</td>
+<td align="right">19.2167</td>
+<td align="right">-98.8083</td>
+<td align="right">27.0</td>
+<td align="right">6.17</td>
+</tr>
+<tr>
+<td align="right">563</td>
+<td>Maniitsoq</td>
+<td align="right">17</td>
+<td>GL</td>
+<td>2021-04-17</td>
+<td align="right">75</td>
+<td align="right">65.4167</td>
+<td align="right">-52.9</td>
+<td align="right">-14.25</td>
+<td align="right">6.61</td>
+</tr>
+</tbody></table>

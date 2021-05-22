@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Web Design Challenge - Home</title>
+        <!-- Styling for nav bar-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+  <title>Weathers</title>
+    </head>
+    <body style="background-color:rgb(39, 204, 204)">
+        <nav class="navbar navbar-dark" style="background-color: #000000;padding-right: 25px;padding-left: 25px;">
+            <div class="row .col-md-1">
+                <a class="navbar-brand" href="index.html">Bobby's Weather Report</a>
+            </div>
+            <div class="row .col-md-3 .col-md-offset-2">
+                <a class="navbar-brand" href="comparison.html">Comparisons</a>
+                <a class="navbar-brand" href="weather_data.html">Dataset</a>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Visualisations
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="cloud.html">Cloud</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="temperature.html">Temperature</a>
+                        <a class="dropdown-item" href="wind.html">Wind</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header style="padding-top: 25px; text-align: center ;">
+            <h1>Bobby's Weather Report</h1>
+            <h2>Comparisons</h2>
+        </header>
+        <article style="background-color:white;padding-right: 25px;padding-left: 25px;">
+            <div class="row">
+                <img class="col-md-6 col-sm-12" src="img/lat vs Cloud.png"/>
+                <img class="col-md-6 col-sm-12" src="img/lat vs Hum.png"/>
+            </div>
+            <div class="row">
+                <img class="col-md-6 col-sm-12" src="img/lat vs temp.png"/>
+                <img class="col-md-6 col-sm-12" src="img/lat vs wind.png"/>
+            </div>
+        </article>
+        </article>
+        <section style="background-color:rgb(39, 204, 204);padding-right: 50px;padding-left: 50px;padding-bottom: 10px;padding-top: 10px;">
+            <h3>Plots and Charts</h3>
+            <div class=row style="justify-content: space-between;">
+                <div class="row .col-md-3" style="padding-right: 10px;padding-left:10px;padding-bottom: 10px;padding-top: 10px;">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/lat vs Cloud.png" class="card-img-top" alt="Cloud Scatter">
+                        <div class="card-body">
+                            <h5 class="card-title">Cloud Scatter</h5>
+                            <p class="card-text">Cloud dispertion across different latitude lines.</p>
+                            <a href="cloud.html" class="btn btn-primary">View Description</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row .col-md-3" style="padding-right: 10px;padding-left:10px;padding-bottom: 10px;padding-top: 10px;">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/lat vs Hum.png" class="card-img-top" alt="Humidity Scatter">
+                        <div class="card-body">
+                            <h5 class="card-title">Humidity Scatter</h5>
+                            <p class="card-text">Humidity levels across different latitude lines.</p>
+                            <a href="humidity.html" class="btn btn-primary">View Description</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row .col-md-3" style="padding-right: 10px;padding-left:10px;padding-bottom: 10px;padding-top: 10px;">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/lat vs temp.png" class="card-img-top" alt="Cloud Scatter">
+                        <div class="card-body">
+                            <h5 class="card-title">Temperature Scatter</h5>
+                            <p class="card-text">Temperature levels across different latitude lines.</p>
+                            <a href="temperature.html" class="btn btn-primary">View Description</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row .col-md-3" style="padding-right: 10px;padding-left:10px;padding-bottom: 10px;padding-top: 10px;">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/lat vs wind.png" class="card-img-top" alt="Cloud Scatter">
+                        <div class="card-body">
+                            <h5 class="card-title">Wind Scatter</h5>
+                            <p class="card-text">Wind speeds across different latitude lines.</p>
+                            <a href="wind.html" class="btn btn-primary">View Description</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+</html>
