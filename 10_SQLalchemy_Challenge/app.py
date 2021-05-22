@@ -8,7 +8,8 @@ from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 from flask import Flask, jsonify
 # set up sqlite db and tables
-engine = create_engine("sqlite:///D:/DataScience/SMU_HW/10_SQLalchemy_Challenge/Resources/hawaii.sqlite")
+#engine = create_engine("sqlite:///D:/DataScience/SMU_HW/10_SQLalchemy_Challenge/Resources/hawaii.sqlite")
+engine = create_engine("sqlite:///Resources/hawaii.sqlite")
 Base = automap_base()
 Base.prepare(engine, reflect=True)
 Measurement = Base.classes.measurement
