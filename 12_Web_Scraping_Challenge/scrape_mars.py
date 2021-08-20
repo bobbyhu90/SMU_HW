@@ -10,7 +10,8 @@ def scrape():
     soup = bs(html, 'html.parser')
     browser.quit()
     head = soup.find_all("div", class_="content_title")[0].text
-    body = soup.find_all("div", class_="article_teaser_body")[1].text
+    body = soup.find_all("div", class_="article_teaser_body")[0].text
+    
     url = "https://data-class-jpl-space.s3.amazonaws.com/JPL_Space/index.html"
     browser = Browser('chrome', headless=True)
     browser.visit(url)
