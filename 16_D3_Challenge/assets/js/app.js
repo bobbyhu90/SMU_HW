@@ -12,7 +12,7 @@ var margin = {
 var width = svgWidth - margin.left - margin.right;
 var height = svgHeight - margin.top - margin.bottom;
 
-// Create an SVG wrapper, append an SVG group that will hold our chart, and shift the latter by left and top margins.
+// Create an SVG wrapper, append an SVG group, and shift left and top margins.
 var svg = d3.select("#scatter")
     .append("svg")
     .attr("width", svgWidth)
@@ -24,15 +24,13 @@ var chartGroup = svg.append("g")
 // Import Data
 d3.csv("assets/data/data.csv").then(function (povData) {
 
-    // Step 1: Parse Data/Cast as numbers
-    // ==============================
+    //Parse Data as numbers
     povData.forEach(function (data) {
         data.poverty = parseFloat(data.poverty);
         data.healthcare = parseFloat(data.healthcare);
     });
 
-    // Step 2: Create scale functions
-    // ==============================
+    //scale functions
     var xLinearScale = d3.scaleLinear()
         .domain([0, d3.max(povData, d => d.poverty)])
         .range([0, width]);
@@ -41,13 +39,11 @@ d3.csv("assets/data/data.csv").then(function (povData) {
         .domain([0, d3.max(povData, d => d.healthcare)])
         .range([height, 0]);
 
-    // Step 3: Create axis functions
-    // ==============================
+    // axis functions
     var bottomAxis = d3.axisBottom(xLinearScale);
     var leftAxis = d3.axisLeft(yLinearScale);
 
-    // Step 4: Append Axes to the chart
-    // ==============================
+    //Append Axes to the chart
     chartGroup.append("g")
         .attr("transform", `translate(0, ${height})`)
         .call(bottomAxis);
@@ -55,8 +51,8 @@ d3.csv("assets/data/data.csv").then(function (povData) {
     chartGroup.append("g")
         .call(leftAxis);
 
-    // Step 5: Create Circles
-    // ==============================
+    //Create Circles
+
     var circlesGroup = chartGroup.selectAll("circle")
         .data(povData)
         .enter()
@@ -77,8 +73,7 @@ d3.csv("assets/data/data.csv").then(function (povData) {
         .attr("x", d => xLinearScale(d.poverty) + 90)
         .attr("y", d => yLinearScale(d.healthcare) + 25);
 
-    // Step 6: Initialize tool tip
-    // ==============================
+    //Initialize tool tip
     var toolTip = d3.tip()
         .attr("class", "tooltip")
         .offset([80, -60])
@@ -86,12 +81,11 @@ d3.csv("assets/data/data.csv").then(function (povData) {
             return (`${d.state}</span><br>Poverty: ${d.poverty}%<br>Healthcare: ${d.healthcare}%`);
         });
 
-    // Step 7: Create tooltip in the chart
-    // ==============================
+    // Create tooltip in the chart
     chartGroup.call(toolTip);
 
-    // Step 8: Create event listeners to display and hide the tooltip
-    // ==============================
+    //Create event listeners to display and hide the tooltip
+
     circlesGroup.on("click", function (data) {
         toolTip.show(data, this);
     })
